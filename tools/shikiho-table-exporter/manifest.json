@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "四季報 スクリーニング表エクスポート",
+  "version": "1.0.0",
+  "description": "表示中の会社四季報オンライン・スクリーニング結果をCSV保存、または表としてクリップボードにコピーします。",
+  "permissions": ["activeTab", "scripting", "downloads", "clipboardWrite"],
+  "action": {
+    "default_title": "四季報の表を出力",
+    "default_popup": "popup.html"
+  }
+}
