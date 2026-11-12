@@ -1,0 +1,19 @@
+[project]
+name = "screenflow-local"
+version = "1.2.0"
+description = "Windows screen capture, batch crop and PDF desktop tool"
+requires-python = ">=3.12,<3.15"
+dependencies = [
+  "PySide6-Essentials>=6.8,<6.13",
+  "Pillow>=12,<14",
+  "PyAutoGUI==0.9.54",
+  "img2pdf==0.6.3",
+]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "pypdf>=6,<8"]
+build = ["pyinstaller>=6,<7"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
