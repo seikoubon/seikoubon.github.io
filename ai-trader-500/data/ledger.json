@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "portfolio_id": "ai-trader-500-v1",
+  "mode": "paper_only",
+  "base_currency": "JPY",
+  "capital_jpy": 5000000,
+  "start_trading_date": "2026-11-16",
+  "cash_jpy": 5000000,
+  "holdings": [],
+  "orders": [],
+  "equity_history": [
+    {
+      "date": "2026-11-13",
+      "phase": "setup",
+      "cash_jpy": 5000000,
+      "holdings_value_jpy": 0,
+      "total_jpy": 5000000,
+      "topix_equivalent_jpy": null,
+      "nikkei_equivalent_jpy": null,
+      "price_status": "no_positions",
+      "sources": []
+    }
+  ],
+  "journal": [
+    {
+      "id": "setup-20261113",
+      "time_jst": "2026-11-13T23:40:00+09:00",
+      "type": "setup",
+      "title": "仮想資金500万円で運用実験を準備",
+      "body": "実資金を使わないAI運用シミュレーションです。売買判断、約定判定、運用成績を公開記録として残します。初回の売買判断は次の営業日に予定しています。",
+      "order_ids": []
+    }
+  ],
+  "last_decision": null,
+  "last_settlement": null,
+  "run_logs": [],
+  "data_quality": "初期設定のみ。発注・約定実績なし。"
+}
