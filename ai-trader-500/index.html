@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="AIに仮想資金500万円の運用を一任する公開実験。売買判断と資産推移を記録。">
+<title>AI TRADER 500 | 公開仮想運用実験</title>
+<style>
+:root{color-scheme:dark;--bg:#0c111a;--panel:#141d2a;--line:#2a3645;--text:#e9f0f5;--muted:#95a4b6;--lime:#a6e3ae;--aqua:#75c9d0;--amber:#f2c479}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 75% 1%,#1c3040 0,#0c111a 40%);color:var(--text);font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;font-size:15px;line-height:1.6}
+.container{max-width:1110px;margin:0 auto;padding:32px 22px 70px}.top{display:flex;justify-content:space-between;gap:15px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:19px}
+.mark{font-weight:820;letter-spacing:.08em;font-size:19px}.mark span{color:var(--lime)}.sub{color:var(--muted);font-size:12px}.status{color:var(--amber);font-size:12px;border:1px solid #776142;border-radius:30px;padding:5px 11px}
+h1{font-size:clamp(26px,5vw,43px);line-height:1.24;margin:43px 0 9px;letter-spacing:-.03em}h2{font-size:18px;margin:0}.lead{color:var(--muted);max-width:780px;margin-bottom:28px}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.tile,.panel{background:rgba(20,29,42,.93);border:1px solid var(--line);border-radius:16px}.tile{padding:17px 20px}.label{color:var(--muted);font-size:12px}.metric{font-size:clamp(20px,2.5vw,28px);letter-spacing:-.03em;font-variant-numeric:tabular-nums;margin-top:5px;font-weight:750}.metric.small{font-size:21px}.panel{padding:24px;margin-top:16px}.sectiontop{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:14px}.pill{font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:40px;padding:4px 10px}
+.legend{display:flex;gap:17px;flex-wrap:wrap;color:var(--muted);font-size:12px;margin:9px 0}.dot{width:10px;height:10px;display:inline-block;border-radius:50%;margin-right:5px}
+.chartbox{height:330px;position:relative}.chartbox svg{width:100%;height:100%;overflow:visible}.chart-note{font-size:12px;color:var(--muted);margin:13px 0 0}
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:16px}table{width:100%;border-collapse:collapse;font-size:13px;text-align:left}th{font-size:11px;color:var(--muted);font-weight:500;border-bottom:1px solid var(--line);padding:9px 7px}td{padding:12px 7px;border-bottom:1px solid #29313d;vertical-align:top}td.num{text-align:right;font-variant-numeric:tabular-nums}th.num{text-align:right}.empty{color:var(--muted);font-size:13px;padding:19px 5px}
+.post{padding:17px 0;border-bottom:1px solid var(--line)}.post:last-child{border-bottom:none}.post h3{font-size:16px;margin:5px 0}.post p{color:#bac7d4;font-size:13px;white-space:pre-wrap;margin:7px 0}.date{color:var(--muted);font-size:11px}.post .type{color:var(--lime);font-size:11px;margin-left:8px}
+footer{margin-top:31px;padding-top:19px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}a{color:var(--aqua)}.error{color:var(--amber)}.good{color:var(--lime)}
+@media(max-width:750px){.container{padding:18px 13px 50px}.metrics{grid-template-columns:repeat(2,1fr)}.tile{padding:13px}.split{grid-template-columns:1fr}.panel{padding:17px}.chartbox{height:265px}.top{align-items:start}.status{white-space:nowrap}}
+</style></head><body><div class="container">
+<header class="top"><div><div class="mark">AI <span>TRADER</span> 500</div><div class="sub">AIの判断を公開記録する、500万円の仮想運用実験</div></div><div id="status" class="status">準備中・実資金なし</div></header>
+<main><h1>AIは、500万円を<br>どう運用するのか。</h1><p class="lead">市場情報の調査、銘柄選択、売買判断をAIに一任。判断時点の記録を残し、実際の価格で約定可能性を検証します。後から成績や売買理由を書き換えません。</p>
+<section class="metrics" aria-label="運用概況">
+<div class="tile"><div class="label">総資産（最終確定評価）</div><div class="metric" id="equity">—</div></div>
+<div class="tile"><div class="label">累積損益</div><div class="metric" id="pnl">—</div></div>
+<div class="tile"><div class="label">現金残高</div><div class="metric small" id="cash">—</div></div>
+<div class="tile"><div class="label">保有銘柄数</div><div class="metric" id="count">—</div></div>
+</section>
+<section class="panel"><div class="sectiontop"><h2>資産推移</h2><span id="asof" class="pill">データ確認中</span></div>
+<div class="legend"><span><i class="dot" style="background:var(--lime)"></i>AI運用</span><span><i class="dot" style="background:var(--aqua)"></i>TOPIX比較</span><span><i class="dot" style="background:var(--amber)"></i>日経平均比較</span></div>
+<div class="chartbox"><svg id="chart" viewBox="0 0 960 315" role="img" aria-label="仮想資産推移グラフ"><text x="50%" y="50%" fill="#95a4b6" text-anchor="middle">読み込み中</text></svg></div>
+<p id="graphnote" class="chart-note">確定値のみ表示します。未取得の比較指数は表示しません。</p></section>
+<div class="split"><section class="panel"><div class="sectiontop"><h2>現在の保有銘柄</h2><span class="pill">仮想口座</span></div><table><thead><tr><th>銘柄</th><th class="num">数量</th><th class="num">評価額</th></tr></thead><tbody id="holdings"><tr><td colspan="3" class="empty">読み込み中</td></tr></tbody></table></section>
+<section class="panel"><div class="sectiontop"><h2>注文・約定記録</h2><span class="pill">全履歴を保存</span></div><table><thead><tr><th>日時 / 銘柄</th><th>判断</th><th class="num">数量</th><th>結果</th></tr></thead><tbody id="orders"><tr><td colspan="4" class="empty">読み込み中</td></tr></tbody></table></section></div>
+<section class="panel"><div class="sectiontop"><h2>AI投資日誌</h2><span class="pill">売買判断を時刻付きで記録</span></div><div id="journal">読み込み中</div></section>
+</main><footer>仮想取引の公開実験です。現実の発注・売買は行いません。市場価格の取得ができない場合、資産評価や約定を推定で確定させません。<br><a href="./data/ledger.json">運用元データ（JSON）</a> ・ <a href="https://github.com/seikoubon/seikoubon.github.io/tree/main/ai-trader-500">GitHub上の記録</a></footer>
+</div><script>
+(function(){
+"use strict";
+const yen=n=>Number.isFinite(+n)?Number(n).toLocaleString("ja-JP")+"円":"—";
+const text=(id,value)=>{document.getElementById(id).textContent=value};
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function plot(d){
+ const svg=document.getElementById("chart"),W=960,H=315,L=83,R=17,T=22,B=37, innerW=W-L-R,innerH=H-T-B;
+ const series=[{k:"total_jpy",color:"#a6e3ae"},{k:"topix_equivalent_jpy",color:"#75c9d0"},{k:"nikkei_equivalent_jpy",color:"#f2c479"}];
+ const vals=d.flatMap(row=>series.map(s=>Number(row[s.k])).filter(x=>Number.isFinite(x)&&x>0));
+ if(!vals.length){svg.innerHTML='<text x="480" y="155" fill="#95a4b6" text-anchor="middle">確定した資産評価がありません</text>';return;}
+ let min=Math.min(...vals),max=Math.max(...vals);let diff=max-min;if(diff<10000){min-=10000;max+=10000}else{min-=diff*.16;max+=diff*.16}
+ const x=i=>L+(d.length<2?innerW/2:i*innerW/(d.length-1));const y=v=>T+innerH-(v-min)/(max-min)*innerH;
+ let out="";
+ for(let i=0;i<=4;i++){let vy=min+(max-min)*i/4,py=y(vy);out+='<line x1="'+L+'" y1="'+py.toFixed(1)+'" x2="'+(W-R)+'" y2="'+py.toFixed(1)+'" stroke="#2c3b49" stroke-dasharray="4 7"/><text x="'+(L-10)+'" y="'+(py+4)+'" fill="#95a4b6" font-size="12" text-anchor="end">'+(vy/10000).toFixed(0)+'万円</text>';}
+ for(const s of series){let path="",last=false;d.forEach((row,i)=>{const v=row[s.k];if(typeof v==="number"&&Number.isFinite(v)&&v>0){path+=(last?"L":"M")+x(i).toFixed(1)+","+y(v).toFixed(1)+" ";last=true}else last=false});if(path){out+='<path d="'+path+'" fill="none" stroke="'+s.color+'" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>';if(d.length===1&&typeof d[0][s.k]==="number")out+='<circle cx="'+x(0)+'" cy="'+y(d[0][s.k])+'" r="5" fill="'+s.color+'"/>';}}
+ const idx=[0,Math.floor((d.length-1)/2),d.length-1].filter((v,i,a)=>a.indexOf(v)===i);
+ idx.forEach(i=>out+='<text x="'+x(i)+'" y="'+(H-8)+'" fill="#95a4b6" font-size="12" text-anchor="middle">'+esc(d[i].date).slice(5)+'</text>');
+ svg.innerHTML=out;
+}
+fetch("./data/ledger.json?t="+Date.now(),{cache:"no-store"}).then(r=>{if(!r.ok)throw new Error("HTTP "+r.status);return r.json()}).then(d=>{
+ const history=d.equity_history||[],latest=history.at(-1),initial=d.capital_jpy||5000000;
+ const total=latest?.total_jpy;
+ text("equity",yen(total));text("pnl",Number.isFinite(total)?((total-initial>=0?"+":"")+yen(total-initial)+" / "+((total/initial-1)*100).toFixed(2)+"%"):"—");text("cash",yen(d.cash_jpy));text("count",String((d.holdings||[]).length));
+ text("asof",latest?latest.date+" 時点":"未集計");text("status",(d.orders||[]).length?"仮想運用・記録中":"準備中・実資金なし");
+ plot(history);if(history.length===1)text("graphnote","開始時点の500万円のみ表示。売買開始後に資産推移が伸びていきます。比較指数は検証済みデータがそろってから追加します。");
+ const holdings=document.getElementById("holdings");holdings.innerHTML=(d.holdings||[]).length?(d.holdings||[]).map(h=>'<tr><td>'+esc(h.name||h.code)+' <span class="sub">'+esc(h.code)+'</span></td><td class="num">'+esc(h.quantity)+'</td><td class="num">'+yen(h.market_value_jpy)+'</td></tr>').join(""):'<tr><td colspan="3" class="empty">保有銘柄はまだありません。</td></tr>';
+ const orders=document.getElementById("orders");orders.innerHTML=(d.orders||[]).length?d.orders.slice(-15).reverse().map(o=>'<tr><td>'+esc(o.decision_at_jst||o.time_jst||"")+'<div class="sub">'+esc(o.code||"")+' '+esc(o.name||"")+'</div></td><td>'+esc(o.side||"")+'</td><td class="num">'+esc(o.quantity||"")+'</td><td>'+esc(o.status||"未確定")+'</td></tr>').join(""):'<tr><td colspan="4" class="empty">売買判断はまだありません。</td></tr>';
+ const journal=document.getElementById("journal");journal.innerHTML=(d.journal||[]).length?d.journal.slice(-15).reverse().map(j=>'<article class="post"><span class="date">'+esc(j.time_jst)+'</span><span class="type">'+esc(j.type||"日誌")+'</span><h3>'+esc(j.title)+'</h3><p>'+esc(j.body)+'</p></article>').join(""):'<p class="empty">日誌はまだありません。</p>';
+}).catch(err=>{text("asof","読込失敗");text("graphnote","公開データの読込に失敗しました。元データJSONを確認してください。");document.getElementById("journal").innerHTML='<p class="error">データ読込エラー: '+esc(err.message)+'</p>';});
+})();
+</script></body></html>
