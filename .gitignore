@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+board_snapshots_*.csv
+tick_snapshots_*.csv
+fop_log_*.csv
+fop_log_v2_*.csv
+fop_log_v3_*.csv
+*.xlsm
+~$*.xlsx
