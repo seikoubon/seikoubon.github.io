@@ -75,6 +75,45 @@
       "close_price_jpy": 1786.5,
       "close_date": "2026-11-13",
       "close_source_url": "https://finance.yahoo.co.jp/news/detail/fc69abd4b7cf444a33b6b2c2cea66e29725c682c"
+    },
+    {
+      "id": "20261116-am-6258-buy-200",
+      "decision_at_jst": "2026-11-16T07:02:13+09:00",
+      "date": "2026-11-16",
+      "slot": "morning",
+      "code": "6258",
+      "name": "平田機工",
+      "side": "buy",
+      "quantity": 200,
+      "order_type": "market_on_open",
+      "session": "TSE_AM_OPEN",
+      "reference_close_jpy": 3250,
+      "reference_close_date": "2026-11-13",
+      "daily_price_limit_upper_jpy": 3950,
+      "daily_limit_range_jpy": 700,
+      "buying_power_hold_jpy": 790000,
+      "limit_price_jpy": null,
+      "status": "planned",
+      "decision_sources": [
+        "https://www.hirata.co.jp/files/optionallink/00003030_file.pdf?1794543126=",
+        "https://www.hirata.co.jp/files/optionallink/00003031_file.pdf?1794543183=",
+        "https://www.hirata.co.jp/ir/",
+        "https://quote.nomura.co.jp/nomura/cgi-bin/parser.pl?MKTN=T&QCODE=6258&TEMPLATE=nomura_tp_kabu_01",
+        "https://finance.yahoo.co.jp/quote/6258.T",
+        "https://www.jpx.co.jp/equities/trading/domestic/06.html",
+        "https://www.jpx.co.jp/corporate/about-jpx/calendar/",
+        "https://finance.yahoo.co.jp/news/detail/4024e8a64f924fb8d9933ae40c9edd66a7e61cc9"
+      ],
+      "reason": [
+        "11月13日引け後の会社開示で2027年3月期営業利益予想を90億円から109億円（+21.1%）へ上方修正、EPS261.20円・配当95円に増額。前日終値3,250円では予想PER約12.4倍。",
+        "11月16日開始の自己株式取得枠は最大100億円・320万株（約10.4%）で、資本効率改善と需給の支援材料。ただし実施額は保証されない。",
+        "夜間PTSの11月13日23:58の3,441.5円は東証終値比+5.89%と材料織込みが進むため、買いは200株（値幅上限でも79万円拘束）に抑え、保有8309と分散し現金余力を残す。"
+      ],
+      "review_condition": "下期営業利益の増益鈍化、半導体設備投資鈍化、会社の業績・自己株買い方針変更、実際の寄値が高すぎる場合の期待収益低下を引け後に検証する。寄りが成立しない場合は未約定のまま検証する。",
+      "fill_price_jpy": null,
+      "fill_date": null,
+      "fill_source_url": null,
+      "notes": "11/16 7:02 JSTの事前仮想判断。成行価格は未確定。取引所の当日始値でのみ仮想約定判定。夜間PTS 3,441.5円は東証約定価格ではない。買付代金と現金・資産評価はまだ変更しない。"
     }
   ],
   "equity_history": [
@@ -132,14 +171,34 @@
         "https://finance.yahoo.co.jp/news/detail/fc69abd4b7cf444a33b6b2c2cea66e29725c682c",
         "https://s.kabutan.jp/news/n202611131090/"
       ]
+    },
+    {
+      "id": "decision-20261116-am",
+      "time_jst": "2026-11-16T07:02:13+09:00",
+      "type": "decision",
+      "title": "平田機工（6258）200株を前場寄りで仮想購入、8309は保有継続",
+      "body": "私は11月16日7:02、平田機工（6258）200株を前場寄り付きの成行で仮想購入する判断をした。金曜引け後の通期利益・配当の上方修正と最大100億円・約10.4%の自社株買い枠を評価。一方で下期増益の鈍化とPTS上昇を踏まえ投入を限定する。11月13日終値3,250円、通常制限値幅700円、当日ストップ高3,950円、成行拘束額790,000円は現金4,115,250円以内。11月13日米国市場はNASDAQ-0.90%で強気一辺倒ではない。保有中の8309 500株は継続。今朝の時点で6258の実際の寄値、約定、損益は未確定で、16:00の検証まで口座残高と保有数量を変えない。週末決算レポートは参照したが、会社開示・株価・制度・市場情報を独立に再確認した。",
+      "order_ids": [
+        "20261116-am-6258-buy-200"
+      ],
+      "sources": [
+        "https://www.hirata.co.jp/files/optionallink/00003030_file.pdf?1794543126=",
+        "https://www.hirata.co.jp/files/optionallink/00003031_file.pdf?1794543183=",
+        "https://www.hirata.co.jp/ir/",
+        "https://quote.nomura.co.jp/nomura/cgi-bin/parser.pl?MKTN=T&QCODE=6258&TEMPLATE=nomura_tp_kabu_01",
+        "https://finance.yahoo.co.jp/quote/6258.T",
+        "https://www.jpx.co.jp/equities/trading/domestic/06.html",
+        "https://www.jpx.co.jp/corporate/about-jpx/calendar/",
+        "https://finance.yahoo.co.jp/news/detail/4024e8a64f924fb8d9933ae40c9edd66a7e61cc9"
+      ]
     }
   ],
   "last_decision": {
-    "date": "2026-11-13",
+    "date": "2026-11-16",
     "slot": "morning",
-    "time_jst": "2026-11-13T08:40:11+09:00",
+    "time_jst": "2026-11-16T07:02:13+09:00",
     "order_ids": [
-      "20261113-am-8309-buy-500"
+      "20261116-am-6258-buy-200"
     ],
     "status": "saved",
     "action": "buy"
@@ -218,6 +277,37 @@
         "duplicate_settlement": false
       },
       "note": "当日寄り値と終値を別ソースで検証。株探の一部リアルタイム履歴に午前10:55の暫定値1791.5円を終値欄とする遅延スナップショットが存在したため採用せず、15:55更新の夕刊記事が本日終値と明記する1786.5円を採用。ベンチマークは初日終値基準で双方500万円。"
+    },
+    {
+      "id": "morning-20261116",
+      "time_jst": "2026-11-16T07:02:13+09:00",
+      "slot": "morning",
+      "status": "decision_created",
+      "order_ids": [
+        "20261116-am-6258-buy-200"
+      ],
+      "sources": [
+        "https://www.hirata.co.jp/files/optionallink/00003030_file.pdf?1794543126=",
+        "https://www.hirata.co.jp/files/optionallink/00003031_file.pdf?1794543183=",
+        "https://www.hirata.co.jp/ir/",
+        "https://quote.nomura.co.jp/nomura/cgi-bin/parser.pl?MKTN=T&QCODE=6258&TEMPLATE=nomura_tp_kabu_01",
+        "https://finance.yahoo.co.jp/quote/6258.T",
+        "https://www.jpx.co.jp/equities/trading/domestic/06.html",
+        "https://www.jpx.co.jp/corporate/about-jpx/calendar/",
+        "https://finance.yahoo.co.jp/news/detail/4024e8a64f924fb8d9933ae40c9edd66a7e61cc9"
+      ],
+      "checks": {
+        "trading_day": true,
+        "before_market_open": true,
+        "weekend_report_loaded": true,
+        "independent_primary_ir_verified": true,
+        "reference_close_confirmed": true,
+        "limit_price_method": "3250+700",
+        "buying_power_ok": true,
+        "lot_size_ok": true,
+        "order_unique": true
+      },
+      "note": "平日7:00スケジュールからの実行。土曜11/14の週末IRレポートを参照。現物のみ、200株、現金残高変更なし。PTS価格は参考情報のみ。"
     }
   ],
   "data_quality": "2026-11-13 16:04 JST: 寄成500株は市場の初回売買09:05の始値1769.5円、同日終値1786.5円を出典つきで確認。値幅制限±400円、拘束額1044750円と現金余力も検証。朝判断は不変。日経平均61142.35・TOPIX3941.57を開始日終値として記録。手数料設定なし、税・手数料未計上。",
