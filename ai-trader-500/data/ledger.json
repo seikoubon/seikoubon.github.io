@@ -276,17 +276,33 @@
         "https://www.jpx.co.jp/equities/trading/domestic/04.html",
         "https://www.jpx.co.jp/equities/trading/domestic/06.html"
       ]
+    },
+    {
+      "id": "decision-20261117-am",
+      "time_jst": "2026-11-17T07:06:41+09:00",
+      "type": "decision",
+      "title": "11月17日朝：新規発注を見送り、8309と6258を継続保有",
+      "body": "私は本日7:06時点の公開情報を検討し、前場寄りの新規売買を見送ると判断した。①米国11月16日のNASDAQは2.49%、S&P500は1.92%下落し、半導体指数SOXは5.3%下落。大阪日経225先物12月限の17日6:00夜間終値は59,200円（現物前日終値比462.02円安）で、本日の急落・価格変動リスクが高い。②保有中の三井住友トラスト(8309)500株は決算での利益上方修正と還元策、平田機工(6258)200株は利益上方修正と自己株取得枠という既存投資仮説が継続し、前日引けまでの情報だけで寄り付きの成行損切りを強制する根拠には乏しい。6258は昨日3,600円で買い、終値3,350円で含み損だが、損益だけを理由に判断しない。③前日引け後には好業績銘柄も出たが、半導体関連などは米国市場の急落・今週のエヌビディア決算前の不確実性が大きく、現金3,395,250円を温存して機会を待つ。保有銘柄は売り・買い増しともせず数量維持。新規注文は0件であるため成行の値幅制限・指値価格・拘束額の計算対象はない。寄り後の株価・実際の約定・本日の成績は未確認。既存残高と評価額は11月16日終値時点のままである。",
+      "order_ids": [],
+      "sources": [
+        "https://www.jpx.co.jp/calendar/",
+        "https://www.reuters.com/business/sp-500-nasdaq-futures-slide-nvidia-earnings-anthropic-debut-loom-2026-11-16/",
+        "https://s.kabutan.jp/news/n202611170080/",
+        "https://s.kabutan.jp/stocks/8309/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/6258.T",
+        "https://s.kabutan.jp/news/n202611161194/",
+        "https://s.kabutan.jp/news/n202611170159/"
+      ],
+      "review_condition": "半導体投資需要や会社予想の悪化、自己株式取得策の変更、米国市場の混乱継続、保有銘柄の決算前提に変化が出れば翌営業日以降に売却・買い増し・新規投資を再検討する。"
     }
   ],
   "last_decision": {
-    "date": "2026-11-16",
+    "date": "2026-11-17",
     "slot": "morning",
-    "time_jst": "2026-11-16T07:02:13+09:00",
-    "order_ids": [
-      "20261116-am-6258-buy-200"
-    ],
+    "time_jst": "2026-11-17T07:06:41+09:00",
+    "order_ids": [],
     "status": "saved",
-    "action": "buy"
+    "action": "no_trade"
   },
   "last_settlement": {
     "date": "2026-11-16",
@@ -429,6 +445,33 @@
         "duplicate_settlement": false
       },
       "note": "寄成200株は09:14の初回取引で始値3,600円（上限3,950円未満）にて仮想約定。11/16終値は6258=3,350円、8309=1,786.5円。日経平均59,662.02・TOPIX3,901.37。相場下落と寄り後の反落を反映。"
+    },
+    {
+      "id": "morning-20261117",
+      "time_jst": "2026-11-17T07:06:41+09:00",
+      "slot": "morning",
+      "status": "no_trade",
+      "order_ids": [],
+      "sources": [
+        "https://www.jpx.co.jp/calendar/",
+        "https://www.reuters.com/business/sp-500-nasdaq-futures-slide-nvidia-earnings-anthropic-debut-loom-2026-11-16/",
+        "https://s.kabutan.jp/news/n202611170080/",
+        "https://s.kabutan.jp/stocks/8309/historical_prices/daily",
+        "https://finance.yahoo.co.jp/quote/6258.T",
+        "https://s.kabutan.jp/news/n202611161194/",
+        "https://s.kabutan.jp/news/n202611170159/"
+      ],
+      "checks": {
+        "trading_day": true,
+        "before_market_open": true,
+        "previous_settlement_loaded": true,
+        "prior_morning_duplicate": false,
+        "holdings_reviewed": true,
+        "new_candidates_reviewed": true,
+        "no_new_buying_power_hold": true,
+        "weekend_report_required": false
+      },
+      "note": "11/17（火）朝の独立売買判断。米国株急落と日経先物安、保有8309・6258の既存材料、16日引け後の好決算候補を評価。買い・売りとも見送り。cash/holdings/equity_history/orders/last_settlementは不変。"
     }
   ],
   "data_quality": "2026-11-13 16:04 JST: 寄成500株は市場の初回売買09:05の始値1769.5円、同日終値1786.5円を出典つきで確認。値幅制限±400円、拘束額1044750円と現金余力も検証。朝判断は不変。日経平均61142.35・TOPIX3941.57を開始日終値として記録。手数料設定なし、税・手数料未計上。 2026-11-16 16:05 JST: 6258の初回09:14始値3600円・15:30終値3350円、8309終値1786.5円、日経平均59662.02・TOPIX3901.37を公開元で照合。成行拘束額790000円に対し事前資金4115250円あり。手数料・税は未計上。",
