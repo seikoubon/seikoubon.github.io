@@ -5,7 +5,7 @@
   "base_currency": "JPY",
   "capital_jpy": 5000000,
   "start_trading_date": "2026-11-13",
-  "cash_jpy": 4115250,
+  "cash_jpy": 3395250,
   "holdings": [
     {
       "code": "8309",
@@ -16,8 +16,20 @@
       "market_price_jpy": 1786.5,
       "market_value_jpy": 893250,
       "unrealized_pnl_jpy": 8500,
-      "price_date": "2026-11-13",
-      "source_url": "https://finance.yahoo.co.jp/news/detail/fc69abd4b7cf444a33b6b2c2cea66e29725c682c"
+      "price_date": "2026-11-16",
+      "source_url": "https://s.kabutan.jp/stocks/8309/"
+    },
+    {
+      "code": "6258",
+      "name": "平田機工",
+      "quantity": 200,
+      "average_cost_jpy": 3600,
+      "acquisition_cost_jpy": 720000,
+      "market_price_jpy": 3350,
+      "market_value_jpy": 670000,
+      "unrealized_pnl_jpy": -50000,
+      "price_date": "2026-11-16",
+      "source_url": "https://finance.yahoo.co.jp/quote/6258.T"
     }
   ],
   "orders": [
@@ -93,7 +105,7 @@
       "daily_limit_range_jpy": 700,
       "buying_power_hold_jpy": 790000,
       "limit_price_jpy": null,
-      "status": "planned",
+      "status": "filled",
       "decision_sources": [
         "https://www.hirata.co.jp/files/optionallink/00003030_file.pdf?1794543126=",
         "https://www.hirata.co.jp/files/optionallink/00003031_file.pdf?1794543183=",
@@ -110,10 +122,36 @@
         "夜間PTSの11月13日23:58の3,441.5円は東証終値比+5.89%と材料織込みが進むため、買いは200株（値幅上限でも79万円拘束）に抑え、保有8309と分散し現金余力を残す。"
       ],
       "review_condition": "下期営業利益の増益鈍化、半導体設備投資鈍化、会社の業績・自己株買い方針変更、実際の寄値が高すぎる場合の期待収益低下を引け後に検証する。寄りが成立しない場合は未約定のまま検証する。",
-      "fill_price_jpy": null,
-      "fill_date": null,
-      "fill_source_url": null,
-      "notes": "11/16 7:02 JSTの事前仮想判断。成行価格は未確定。取引所の当日始値でのみ仮想約定判定。夜間PTS 3,441.5円は東証約定価格ではない。買付代金と現金・資産評価はまだ変更しない。"
+      "fill_price_jpy": 3600,
+      "fill_date": "2026-11-16",
+      "fill_source_url": "https://finance.yahoo.co.jp/quote/6258.T",
+      "notes": "11/16 7:02 JSTの事前仮想判断。成行価格は未確定。取引所の当日始値でのみ仮想約定判定。夜間PTS 3,441.5円は東証約定価格ではない。買付代金と現金・資産評価はまだ変更しない。 引け後照合: 東証の初回約定は09:14、始値3,600円、終値3,350円。決算・自社株買い材料による買い先行後に反落。09:14の市場始値で200株を仮想約定とした。",
+      "fill_quantity": 200,
+      "fill_time_jst": "2026-11-16T09:14:00+09:00",
+      "fill_method": "TSE morning session first trade at 09:14 after delayed opening; pre-submitted simulated market-on-open order",
+      "fill_validation": {
+        "trading_day_source_url": "https://www.jpx.co.jp/corporate/about-jpx/calendar/",
+        "price_limit_source_url": "https://finance.yahoo.co.jp/quote/6258.T",
+        "price_limit_jpx_url": "https://www.jpx.co.jp/equities/trading/domestic/06.html",
+        "trading_mechanism_source_url": "https://www.jpx.co.jp/equities/trading/domestic/04.html",
+        "previous_close_jpy": 3250,
+        "daily_limit_up_jpy": 3950,
+        "buying_power_hold_jpy": 790000,
+        "buying_power_ok": true,
+        "lot_size": 100,
+        "lot_size_ok": true,
+        "first_print_at": "09:14",
+        "opening_price_jpy": 3600,
+        "opening_not_at_limit_up": true,
+        "source_checked_date": "2026-11-16",
+        "source_urls": [
+          "https://finance.yahoo.co.jp/quote/6258.T",
+          "https://www.sbisec.co.jp/ETGate/WPLETsiR001Control/WPLETsiR001Ilst10/getDetailOfStockPriceJP?exchange_code=JPN&stock_sec_code_mul=6258"
+        ]
+      },
+      "close_price_jpy": 3350,
+      "close_date": "2026-11-16",
+      "close_source_url": "https://finance.yahoo.co.jp/quote/6258.T"
     }
   ],
   "equity_history": [
@@ -136,6 +174,34 @@
       "price_date": "2026-11-13",
       "baseline_date": "2026-11-13",
       "unrealized_pnl_jpy": 8500
+    },
+    {
+      "date": "2026-11-16",
+      "phase": "close",
+      "cash_jpy": 3395250,
+      "holdings_value_jpy": 1563250,
+      "total_jpy": 4958500,
+      "topix_equivalent_jpy": 4949005,
+      "nikkei_equivalent_jpy": 4878944,
+      "price_status": "confirmed_close",
+      "sources": [
+        "https://www.jpx.co.jp/corporate/about-jpx/calendar/",
+        "https://finance.yahoo.co.jp/quote/6258.T",
+        "https://www.sbisec.co.jp/ETGate/WPLETsiR001Control/WPLETsiR001Ilst10/getDetailOfStockPriceJP?exchange_code=JPN&stock_sec_code_mul=6258",
+        "https://s.kabutan.jp/stocks/8309/",
+        "https://s.kabutan.jp/news/n202611160940/",
+        "https://www.jpx.co.jp/equities/trading/domestic/04.html",
+        "https://www.jpx.co.jp/equities/trading/domestic/06.html"
+      ],
+      "price_date": "2026-11-16",
+      "baseline_date": "2026-11-13",
+      "unrealized_pnl_jpy": -41500,
+      "benchmarks": {
+        "nikkei_close": 59662.02,
+        "topix_close": 3901.37,
+        "nikkei_source_url": "https://s.kabutan.jp/news/n202611160940/",
+        "topix_source_url": "https://s.kabutan.jp/news/n202611160940/"
+      }
     }
   ],
   "journal": [
@@ -191,6 +257,25 @@
         "https://www.jpx.co.jp/corporate/about-jpx/calendar/",
         "https://finance.yahoo.co.jp/news/detail/4024e8a64f924fb8d9933ae40c9edd66a7e61cc9"
       ]
+    },
+    {
+      "id": "settlement-20261116",
+      "time_jst": "2026-11-16T16:05:26+09:00",
+      "type": "settlement",
+      "title": "平田機工200株を9:14に仮想約定、当日含み損5万円・総資産4,958,500円",
+      "body": "私は7:02に決めた平田機工（6258）の寄成買い200株を、本日09:14に初めて成立した東証始値3,600円で仮想約定とした。終値3,350円まで反落して同銘柄は含み損50,000円。三井住友トラスト（8309）500株は終値1,786.5円で保有継続、含み益8,500円。2銘柄合計含み損41,500円、現金3,395,250円、総資産4,958,500円（開始比-0.83%）。本日は負け。好決算と自社株買いを評価したが、上昇分が寄り付きに織り込まれた後、売りが優勢だった。日経平均は前営業日比-2.42%、TOPIXは-1.02%の下落。実現損益ではなく評価損益。朝の判断理由は一切変更していない。",
+      "order_ids": [
+        "20261116-am-6258-buy-200"
+      ],
+      "sources": [
+        "https://www.jpx.co.jp/corporate/about-jpx/calendar/",
+        "https://finance.yahoo.co.jp/quote/6258.T",
+        "https://www.sbisec.co.jp/ETGate/WPLETsiR001Control/WPLETsiR001Ilst10/getDetailOfStockPriceJP?exchange_code=JPN&stock_sec_code_mul=6258",
+        "https://s.kabutan.jp/stocks/8309/",
+        "https://s.kabutan.jp/news/n202611160940/",
+        "https://www.jpx.co.jp/equities/trading/domestic/04.html",
+        "https://www.jpx.co.jp/equities/trading/domestic/06.html"
+      ]
     }
   ],
   "last_decision": {
@@ -204,22 +289,26 @@
     "action": "buy"
   },
   "last_settlement": {
-    "date": "2026-11-13",
-    "time_jst": "2026-11-13T16:04:12+09:00",
+    "date": "2026-11-16",
+    "time_jst": "2026-11-16T16:05:26+09:00",
     "status": "completed",
     "filled_order_ids": [
-      "20261113-am-8309-buy-500"
+      "20261116-am-6258-buy-200"
     ],
-    "cash_jpy": 4115250,
-    "holdings_value_jpy": 893250,
-    "total_jpy": 5008500,
-    "unrealized_pnl_jpy": 8500,
+    "cash_jpy": 3395250,
+    "holdings_value_jpy": 1563250,
+    "total_jpy": 4958500,
+    "unrealized_pnl_jpy": -41500,
     "reference_price_status": "confirmed",
     "benchmark_baseline_date": "2026-11-13",
     "sources": [
-      "https://quote.nomura.co.jp/nomura/cgi-bin/parser.pl?MKTN=T&QCODE=8309&TEMPLATE=nomura_tp_kabu_01",
-      "https://finance.yahoo.co.jp/news/detail/fc69abd4b7cf444a33b6b2c2cea66e29725c682c",
-      "https://s.kabutan.jp/news/n202611131090/"
+      "https://www.jpx.co.jp/corporate/about-jpx/calendar/",
+      "https://finance.yahoo.co.jp/quote/6258.T",
+      "https://www.sbisec.co.jp/ETGate/WPLETsiR001Control/WPLETsiR001Ilst10/getDetailOfStockPriceJP?exchange_code=JPN&stock_sec_code_mul=6258",
+      "https://s.kabutan.jp/stocks/8309/",
+      "https://s.kabutan.jp/news/n202611160940/",
+      "https://www.jpx.co.jp/equities/trading/domestic/04.html",
+      "https://www.jpx.co.jp/equities/trading/domestic/06.html"
     ]
   },
   "run_logs": [
@@ -308,9 +397,41 @@
         "order_unique": true
       },
       "note": "平日7:00スケジュールからの実行。土曜11/14の週末IRレポートを参照。現物のみ、200株、現金残高変更なし。PTS価格は参考情報のみ。"
+    },
+    {
+      "id": "settlement-20261116",
+      "time_jst": "2026-11-16T16:05:26+09:00",
+      "slot": "settlement",
+      "status": "completed",
+      "order_ids": [
+        "20261116-am-6258-buy-200"
+      ],
+      "sources": [
+        "https://www.jpx.co.jp/corporate/about-jpx/calendar/",
+        "https://finance.yahoo.co.jp/quote/6258.T",
+        "https://www.sbisec.co.jp/ETGate/WPLETsiR001Control/WPLETsiR001Ilst10/getDetailOfStockPriceJP?exchange_code=JPN&stock_sec_code_mul=6258",
+        "https://s.kabutan.jp/stocks/8309/",
+        "https://s.kabutan.jp/news/n202611160940/",
+        "https://www.jpx.co.jp/equities/trading/domestic/04.html",
+        "https://www.jpx.co.jp/equities/trading/domestic/06.html"
+      ],
+      "checks": {
+        "trading_day": true,
+        "pre_open_decision_saved": true,
+        "open_trade_at_0914_verified": true,
+        "limit_band_verified": true,
+        "order_quantity_valid": true,
+        "buying_power_valid": true,
+        "closing_price_6258_verified": true,
+        "closing_price_8309_verified": true,
+        "cash_holdings_arithmetic_valid": true,
+        "benchmark_closes_verified": true,
+        "duplicate_settlement": false
+      },
+      "note": "寄成200株は09:14の初回取引で始値3,600円（上限3,950円未満）にて仮想約定。11/16終値は6258=3,350円、8309=1,786.5円。日経平均59,662.02・TOPIX3,901.37。相場下落と寄り後の反落を反映。"
     }
   ],
-  "data_quality": "2026-11-13 16:04 JST: 寄成500株は市場の初回売買09:05の始値1769.5円、同日終値1786.5円を出典つきで確認。値幅制限±400円、拘束額1044750円と現金余力も検証。朝判断は不変。日経平均61142.35・TOPIX3941.57を開始日終値として記録。手数料設定なし、税・手数料未計上。",
+  "data_quality": "2026-11-13 16:04 JST: 寄成500株は市場の初回売買09:05の始値1769.5円、同日終値1786.5円を出典つきで確認。値幅制限±400円、拘束額1044750円と現金余力も検証。朝判断は不変。日経平均61142.35・TOPIX3941.57を開始日終値として記録。手数料設定なし、税・手数料未計上。 2026-11-16 16:05 JST: 6258の初回09:14始値3600円・15:30終値3350円、8309終値1786.5円、日経平均59662.02・TOPIX3901.37を公開元で照合。成行拘束額790000円に対し事前資金4115250円あり。手数料・税は未計上。",
   "benchmark_baseline": {
     "date": "2026-11-13",
     "nikkei_close": 61142.35,
