@@ -343,12 +343,31 @@
         "https://finance.yahoo.co.jp/quote/998407.O/history",
         "https://finance.yahoo.co.jp/quote/998405.T/history"
       ]
+    },
+    {
+      "id": "decision-20261118-am",
+      "time_jst": "2026-11-18T07:04:30+09:00",
+      "type": "decision",
+      "title": "11月18日朝：NVIDIA好決算と米株安を評価、売買見送りで既存2銘柄を継続保有",
+      "body": "私は11月18日7:04時点の公開情報を調べ、前場寄りの買い・売り・指値注文をすべて見送ると決めた。 1）11月17日米国引けはダウ-1.64%、S&P500-1.03%、NASDAQ-0.74%。18日6:23時点CME日経先物58,890円（大証17日日中引け58,900円とほぼ同水準）。米株下落は重荷だが、東京市場の寄り方向は確定しない。 2）18日6:20頃発表のNVIDIA決算は売上1158億ドル（前年同期比+103%）、次四半期見通し1300億ドルで予想を上回り、発表直後の時間外株価は約2.2%上昇。ただし次四半期粗利率見通し71〜72%へ低下、見通しの織込み・寄り値の不確実性が大きく、新規半導体関連株の寄成買いは見送る。 3）8309は業績上方修正・還元、6258は業績上方修正・自社株取得枠が既存投資前提。両銘柄の株価は17日まで下落したが、損失だけを理由に寄り付きで売却しない。17日発表の綜研化学(4972)経常利益上方修正・配当135円も検討したが、好材料翌朝の寄り付きギャップを読めず、積極的な追加買いは見送る。 保有8309 500株・6258 200株を維持し、新規注文0件、現金3,395,250円は保全する。前営業日11月17日終値基準の資産総額4,875,250円（開始比-124,750円、-2.495%）は本日朝の未実現・未更新の参考値であり、11月18日の価格・約定・成績は未確定。月曜日ではないので週末レポートの必須再取得は不要。新規注文がないため値幅制限・買付拘束額の計算対象なし。",
+      "order_ids": [],
+      "sources": [
+        "https://www.jpx.co.jp/calendar/",
+        "https://minkabu.jp/news/4667574",
+        "https://www.stocktitan.net/news/NVDA/nvidia-announces-financial-results-for-third-quarter-fiscal-fpx9dw5egxqa.html",
+        "https://www.smtg.jp/investors/news/2026",
+        "https://www.hirata.co.jp/",
+        "https://s.kabutan.jp/news/k202611170001/",
+        "https://finance.yahoo.co.jp/quote/8309.T",
+        "https://finance.yahoo.co.jp/quote/6258.T"
+      ],
+      "review_condition": "NVIDIA決算後の米国株時間外と日本の半導体・設備投資株の反応、8309の最新決算説明資料、6258の自社株取得実施・受注環境、4972の材料織込みを今後の営業日に再評価する。"
     }
   ],
   "last_decision": {
-    "date": "2026-11-17",
+    "date": "2026-11-18",
     "slot": "morning",
-    "time_jst": "2026-11-17T07:06:41+09:00",
+    "time_jst": "2026-11-18T07:04:30+09:00",
     "order_ids": [],
     "status": "saved",
     "action": "no_trade"
@@ -552,6 +571,35 @@
         "duplicate_settlement": false
       },
       "note": "11/17朝は新規注文なし。8309終値1712円、6258終値3120円、日経平均58860.43、TOPIX3840.02。11/16の保有数量と現金を維持し、17日終値で時価評価のみ更新。前日比-83,250円。"
+    },
+    {
+      "id": "morning-20261118",
+      "time_jst": "2026-11-18T07:04:30+09:00",
+      "slot": "morning",
+      "status": "no_trade",
+      "order_ids": [],
+      "sources": [
+        "https://www.jpx.co.jp/calendar/",
+        "https://minkabu.jp/news/4667574",
+        "https://www.stocktitan.net/news/NVDA/nvidia-announces-financial-results-for-third-quarter-fiscal-fpx9dw5egxqa.html",
+        "https://www.smtg.jp/investors/news/2026",
+        "https://www.hirata.co.jp/",
+        "https://s.kabutan.jp/news/k202611170001/",
+        "https://finance.yahoo.co.jp/quote/8309.T",
+        "https://finance.yahoo.co.jp/quote/6258.T"
+      ],
+      "checks": {
+        "trading_day": true,
+        "before_market_open": true,
+        "previous_settlement_loaded": true,
+        "prior_morning_duplicate": false,
+        "holdings_reviewed": true,
+        "new_candidates_reviewed": true,
+        "nvidia_results_checked": true,
+        "no_new_buying_power_hold": true,
+        "weekend_report_required": false
+      },
+      "note": "2026-11-18（水）朝の独立判断。11/17米国株引け・11/18早朝NVIDIA実績とガイダンス・保有8309/6258 IR・4972修正を確認。新規売買なし。cash/holdings/orders/equity_history/last_settlementは不変。"
     }
   ],
   "data_quality": "2026-11-13 16:04 JST: 寄成500株は市場の初回売買09:05の始値1769.5円、同日終値1786.5円を出典つきで確認。値幅制限±400円、拘束額1044750円と現金余力も検証。朝判断は不変。日経平均61142.35・TOPIX3941.57を開始日終値として記録。手数料設定なし、税・手数料未計上。 2026-11-16 16:05 JST: 6258の初回09:14始値3600円・15:30終値3350円、8309終値1786.5円、日経平均59662.02・TOPIX3901.37を公開元で照合。成行拘束額790000円に対し事前資金4115250円あり。手数料・税は未計上。 2026-11-17 16時台JST: 朝の独立判断はno_trade・注文0件。JPX営業日と8309/6258の15:30東証終値1712円/3120円、指数日経平均58860.43・TOPIX3840.02をYahoo!ファイナンスと株探の当日値で確認した。始値・値幅制限による新規約定検証は注文がないため対象外。現金・数量不変、手数料・税未計上。基準日2026-11-13の指数値はYahoo!ファイナンスの時系列で確認。",
