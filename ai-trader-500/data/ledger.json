@@ -407,12 +407,33 @@
         "https://s.kabutan.jp/news/n202611131090/",
         "https://s.kabutan.jp/news/n202611131090/"
       ]
+    },
+    {
+      "id": "decision-20261119-am",
+      "time_jst": "2026-11-19T07:02:16+09:00",
+      "type": "decision",
+      "title": "11月19日朝：米株まちまち・6258の材料出尽くし懸念を評価、売買見送り",
+      "body": "私は2026年11月19日7:02 JST時点の公表情報を確認し、今朝の前場寄りでの売買（成行・指値とも）を見送る。保有8309は500株、6258は200株で変更しない。理由は①11月18日の米国株はNASDAQ+0.39%に対してダウ-1.12%、S&P500-0.24%。NVIDIAが好決算にもかかわらず-2.9%となり、10月FOMC議事要旨は追加利上げに前向き。AI・景気循環株のリスク選好に一貫した改善が確認できない。②保有8309は11月12日公表の業績上方修正・還元方針が投資仮説として残る。6258は11月13日の業績上方修正・自社株買い枠にもかかわらず11月16日寄り3,600円から11月18日終値3,200円へ下落し、発表前の11月13日終値3,250円を下回った。好材料に対する市場の反応の弱さは懸念だが、事業見通しの撤回や自社株買い中止など決定的な悪材料は確認できず、寄り値不明の段階での強制売却や追加買付を行わない。③11月18日引け後のベルグアース(1383)の経常利益2.4倍上方修正も候補として確認したが、同日の出来高は約1,200株、売買代金約369.5万円、時価総額約50億円と流動性が不足し、夜間PTSは100株のみで終値比約8.6%高。これを寄り付きで追わない。11月18日日経平均は59,024.28円（+163.85円）でもTOPIXは3,824.00（-0.42%）で広範な強さは乏しい。新規注文0件で買付拘束額算定は不要。現金3,395,250円、総資産4,884,000円は2026年11月18日終値に基づく既存台帳値であり、19日の株価・約定・損益は未確定。月曜日でないため週末レポート必須チェックは対象外。",
+      "order_ids": [],
+      "sources": [
+        "https://www.jpx.co.jp/corporate/about-jpx/calendar/",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/",
+        "https://apnews.com/article/stock-markets-ai-earnings-oil-apec-shenzhen-dad5715bc91b4aba23a567a40e22b1fc",
+        "https://finance.yahoo.co.jp/quote/8309.T",
+        "https://finance.yahoo.co.jp/quote/6258.T/history",
+        "https://finance.yahoo.co.jp/quote/6258.T",
+        "https://s.kabutan.jp/news/n202611181109/",
+        "https://finance.matsui.co.jp/stock/1383/index",
+        "https://finance.yahoo.co.jp/quote/1383.T",
+        "https://www.oanda.jp/lab-education/market_news/fomc-minutes-oct-2026/"
+      ],
+      "review_condition": "6258の自社株取得実施動向、受注・業績見通し、株価の反発力を確認。8309の株主還元・金融環境・決算前提が崩れる場合は売却を再検討。新規銘柄は流動性と寄り付き時点の織込みを重視し、資金を温存する。"
     }
   ],
   "last_decision": {
-    "date": "2026-11-18",
+    "date": "2026-11-19",
     "slot": "morning",
-    "time_jst": "2026-11-18T07:04:30+09:00",
+    "time_jst": "2026-11-19T07:02:16+09:00",
     "order_ids": [],
     "status": "saved",
     "action": "no_trade"
@@ -672,6 +693,36 @@
         "duplicate_settlement": false
       },
       "note": "11/18朝は売買なし。15:30東証終値8309=1697.5円、6258=3200円、日経平均59024.28、TOPIX3824.00。保有株数と現金不変、前日比+8,750円。"
+    },
+    {
+      "id": "morning-20261119",
+      "time_jst": "2026-11-19T07:02:16+09:00",
+      "slot": "morning",
+      "status": "no_trade",
+      "order_ids": [],
+      "sources": [
+        "https://www.jpx.co.jp/corporate/about-jpx/calendar/",
+        "https://www.reuters.com/business/nasdaq-futures-jump-nvidia-forecast-lifts-ai-trade-ahead-anthropic-pricing-2026-11-18/",
+        "https://apnews.com/article/stock-markets-ai-earnings-oil-apec-shenzhen-dad5715bc91b4aba23a567a40e22b1fc",
+        "https://finance.yahoo.co.jp/quote/8309.T",
+        "https://finance.yahoo.co.jp/quote/6258.T/history",
+        "https://finance.yahoo.co.jp/quote/6258.T",
+        "https://s.kabutan.jp/news/n202611181109/",
+        "https://finance.matsui.co.jp/stock/1383/index",
+        "https://finance.yahoo.co.jp/quote/1383.T",
+        "https://www.oanda.jp/lab-education/market_news/fomc-minutes-oct-2026/"
+      ],
+      "checks": {
+        "trading_day": true,
+        "before_market_open": true,
+        "previous_settlement_loaded": true,
+        "prior_morning_duplicate": false,
+        "holdings_reviewed": true,
+        "new_candidates_reviewed": true,
+        "no_new_buying_power_hold": true,
+        "weekend_report_required": false
+      },
+      "note": "2026/11/19(木)朝。米国11/18引け・FOMC議事要旨・8309/6258の直近株価と既存投資理由・1383上方修正と流動性を確認し、買い・売りとも見送り。保有数量/現金/注文/前日の時価評価は変更しない。"
     }
   ],
   "data_quality": "2026-11-13 16:04 JST: 寄成500株は市場の初回売買09:05の始値1769.5円、同日終値1786.5円を出典つきで確認。値幅制限±400円、拘束額1044750円と現金余力も検証。朝判断は不変。日経平均61142.35・TOPIX3941.57を開始日終値として記録。手数料設定なし、税・手数料未計上。 2026-11-16 16:05 JST: 6258の初回09:14始値3600円・15:30終値3350円、8309終値1786.5円、日経平均59662.02・TOPIX3901.37を公開元で照合。成行拘束額790000円に対し事前資金4115250円あり。手数料・税は未計上。 2026-11-17 16時台JST: 朝の独立判断はno_trade・注文0件。JPX営業日と8309/6258の15:30東証終値1712円/3120円、指数日経平均58860.43・TOPIX3840.02をYahoo!ファイナンスと株探の当日値で確認した。始値・値幅制限による新規約定検証は注文がないため対象外。現金・数量不変、手数料・税未計上。基準日2026-11-13の指数値はYahoo!ファイナンスの時系列で確認。 2026-11-18 15:59 JST: 11/18の朝はno_trade、注文0件。JPX 2026年休業日一覧から営業日と確認。Yahoo!ファイナンスの15:30東証終値8309=1697.5円、6258=3200円、日経平均59024.28、TOPIX3824.00を確認。開始日11/13の記録済み確定ベンチマーク値に基づき換算。現金・株数不変。手数料・税未計上。",
