@@ -152,6 +152,43 @@
       "close_price_jpy": 3350,
       "close_date": "2026-11-16",
       "close_source_url": "https://finance.yahoo.co.jp/quote/6258.T"
+    },
+    {
+      "id": "20261120-am-6258-sell-200",
+      "decision_at_jst": "2026-11-20T07:01:19+09:00",
+      "date": "2026-11-20",
+      "slot": "morning",
+      "code": "6258",
+      "name": "平田機工",
+      "side": "sell",
+      "quantity": 200,
+      "order_type": "market_on_open",
+      "session": "TSE_AM_OPEN",
+      "reference_close_jpy": 3105,
+      "reference_close_date": "2026-11-19",
+      "buying_power_hold_jpy": 0,
+      "limit_price_jpy": null,
+      "status": "planned",
+      "decision_sources": [
+        "https://www.jpx.co.jp/calendar/",
+        "https://fx.minkabu.jp/news/385008",
+        "https://fx.minkabu.jp/news/385009",
+        "https://s.kabutan.jp/stocks/6258/historical_prices/daily",
+        "https://www.hirata.co.jp/news/archives/1807",
+        "https://s.kabutan.jp/stocks/8309/",
+        "https://s.kabutan.jp/news/n202611191248/",
+        "https://s.kabutan.jp/news/k202611190009/"
+      ],
+      "reason": [
+        "平田機工が11月19日公表した決算説明会Q&Aで、自動車関連の上期営業利益率約20%には関税還付など一過性要因と円安効果があり、実力値は10%強と説明。下期は利益率の低い製品構成・費用増で上期比減益、北米の自動車設備投資判断の後ろ倒しもある。11月13日の上方修正だけでは持続的な利益成長を十分裏付けられない。",
+        "6258の11月19日終値3,105円は11月13日材料発表前終値3,250円、11月16日の仮想取得価格3,600円を下回る。11月19日の安値は3,015円、信用買い残も11月13日時点860,600株と多く、良材料発表後の下落が続いているため投資仮説を縮小する。",
+        "米国11月19日終値はダウ-2.19%、NASDAQ-2.25%、S&P500-2.02%。11月20日06:23JSTのCME日経先物は57,955円（大証日中引け比-3.08%）。11月23日は国内休場なので、景気敏感な6258を前場寄りで全株売却し、新規買いを控えて現金比率を高める。8309は業績改善・株主還元の既存理由を再点検し継続。"
+      ],
+      "review_condition": "仮想寄成売りの初回約定実値、特別気配・寄り遅延を引け後に検証。未約定なら保有継続として次営業日に判断をやり直す。半導体受注・自動車収益率・自社株取得実施状況が改善すれば再投資を検討する。",
+      "fill_price_jpy": null,
+      "fill_date": null,
+      "fill_source_url": null,
+      "notes": "11月20日9:00前の仮想売り注文。寄り時点の実価格未確認、現金・株式数量・評価額は朝の段階では変更しない。成行売りであり指値なし。売却の成立確認と損益計算は16:00の引け後担当に委ねる。"
     }
   ],
   "equity_history": [
@@ -471,15 +508,38 @@
         "https://s.kabutan.jp/news/n202611131090/",
         "https://s.kabutan.jp/news/n202611131090/"
       ]
+    },
+    {
+      "id": "decision-20261120-am",
+      "time_jst": "2026-11-20T07:01:19+09:00",
+      "type": "decision",
+      "title": "11月20日朝：平田機工6258を200株寄成売り、8309は500株保有継続",
+      "body": "私は2026年11月20日07:01JSTまでに確認できた公開情報で、平田機工(6258)200株を前場寄成で全株仮想売却し、新規買いは行わず、三井住友トラストグループ(8309)500株は継続保有すると決定した。理由：①平田機工が11月19日公表した決算説明会Q&Aで、自動車関連の上期営業利益率約20%には関税還付など一過性要因と円安効果があり、実力値は10%強と説明。下期は利益率の低い製品構成・費用増で上期比減益、北米の自動車設備投資判断の後ろ倒しもある。11月13日の上方修正だけでは持続的な利益成長を十分裏付けられない。 ②6258の11月19日終値3,105円は11月13日材料発表前終値3,250円、11月16日の仮想取得価格3,600円を下回る。11月19日の安値は3,015円、信用買い残も11月13日時点860,600株と多く、良材料発表後の下落が続いているため投資仮説を縮小する。 ③米国11月19日終値はダウ-2.19%、NASDAQ-2.25%、S&P500-2.02%。11月20日06:23JSTのCME日経先物は57,955円（大証日中引け比-3.08%）。11月23日は国内休場なので、景気敏感な6258を前場寄りで全株売却し、新規買いを控えて現金比率を高める。8309は業績改善・株主還元の既存理由を再点検し継続。 現金3,395,250円、8309 500株、6258 200株、前日総資産4,874,250円は11月19日大引けで確認した既存台帳値であり、11月20日の約定・損益は全て未確定。売却代金は現時点で現金に加算せず、注文の状況はplannedのまま保存する。月曜ではないため週末決算レポート取得の必須条件は対象外。買いなしのため資金拘束額算定対象なし。",
+      "order_ids": [
+        "20261120-am-6258-sell-200"
+      ],
+      "sources": [
+        "https://www.jpx.co.jp/calendar/",
+        "https://fx.minkabu.jp/news/385008",
+        "https://fx.minkabu.jp/news/385009",
+        "https://s.kabutan.jp/stocks/6258/historical_prices/daily",
+        "https://www.hirata.co.jp/news/archives/1807",
+        "https://s.kabutan.jp/stocks/8309/",
+        "https://s.kabutan.jp/news/n202611191248/",
+        "https://s.kabutan.jp/news/k202611190009/"
+      ],
+      "review_condition": "仮想寄成売りの初回約定実値、特別気配・寄り遅延を引け後に検証。未約定なら保有継続として次営業日に判断をやり直す。半導体受注・自動車収益率・自社株取得実施状況が改善すれば再投資を検討する。"
     }
   ],
   "last_decision": {
-    "date": "2026-11-19",
+    "date": "2026-11-20",
     "slot": "morning",
-    "time_jst": "2026-11-19T07:02:16+09:00",
-    "order_ids": [],
+    "time_jst": "2026-11-20T07:01:19+09:00",
+    "order_ids": [
+      "20261120-am-6258-sell-200"
+    ],
     "status": "saved",
-    "action": "no_trade"
+    "action": "sell_6258_market_on_open"
   },
   "last_settlement": {
     "date": "2026-11-19",
@@ -793,6 +853,38 @@
         "duplicate_settlement": false
       },
       "note": "11/19朝はno_trade、注文0件。東証15:30終値8309=1716円、6258=3105円、日経平均59444.21、TOPIX3822.47。現金株数不変、前日比-9750円。"
+    },
+    {
+      "id": "morning-20261120",
+      "time_jst": "2026-11-20T07:01:19+09:00",
+      "slot": "morning",
+      "status": "order_planned",
+      "order_ids": [
+        "20261120-am-6258-sell-200"
+      ],
+      "sources": [
+        "https://www.jpx.co.jp/calendar/",
+        "https://fx.minkabu.jp/news/385008",
+        "https://fx.minkabu.jp/news/385009",
+        "https://s.kabutan.jp/stocks/6258/historical_prices/daily",
+        "https://www.hirata.co.jp/news/archives/1807",
+        "https://s.kabutan.jp/stocks/8309/",
+        "https://s.kabutan.jp/news/n202611191248/",
+        "https://s.kabutan.jp/news/k202611190009/"
+      ],
+      "checks": {
+        "trading_day": true,
+        "before_market_open": true,
+        "previous_settlement_loaded": true,
+        "prior_morning_duplicate": false,
+        "holdings_reviewed": true,
+        "new_candidates_reviewed": true,
+        "company_6258_latest_qa_read": true,
+        "buying_power_hold_required": false,
+        "weekend_report_required": false,
+        "no_actual_trade": true
+      },
+      "note": "2026/11/20(金)朝。米11/19主要指数急落、日経先物、6258 11/19決算説明会Q&Aと株価推移、8309の株価、8725/8766の11/19決算を比較。6258の成行売り200株を予定。8309継続。売買約定・損益・現金・保有数量はこの段階では未変更。"
     }
   ],
   "data_quality": "2026-11-13 16:04 JST: 寄成500株は市場の初回売買09:05の始値1769.5円、同日終値1786.5円を出典つきで確認。値幅制限±400円、拘束額1044750円と現金余力も検証。朝判断は不変。日経平均61142.35・TOPIX3941.57を開始日終値として記録。手数料設定なし、税・手数料未計上。 2026-11-16 16:05 JST: 6258の初回09:14始値3600円・15:30終値3350円、8309終値1786.5円、日経平均59662.02・TOPIX3901.37を公開元で照合。成行拘束額790000円に対し事前資金4115250円あり。手数料・税は未計上。 2026-11-17 16時台JST: 朝の独立判断はno_trade・注文0件。JPX営業日と8309/6258の15:30東証終値1712円/3120円、指数日経平均58860.43・TOPIX3840.02をYahoo!ファイナンスと株探の当日値で確認した。始値・値幅制限による新規約定検証は注文がないため対象外。現金・数量不変、手数料・税未計上。基準日2026-11-13の指数値はYahoo!ファイナンスの時系列で確認。 2026-11-18 15:59 JST: 11/18の朝はno_trade、注文0件。JPX 2026年休業日一覧から営業日と確認。Yahoo!ファイナンスの15:30東証終値8309=1697.5円、6258=3200円、日経平均59024.28、TOPIX3824.00を確認。開始日11/13の記録済み確定ベンチマーク値に基づき換算。現金・株数不変。手数料・税未計上。 2026-11-19 16時台JST: 11/19はJPX営業日。朝はno_trade、注文0件。株探の当日15:30値8309=1716円、Yahoo!ファイナンスの当日15:30値6258=3105円を確認。フィスコの15:35の当日大引け速報で日経平均59444.21、TOPIX3822.47を照合。開始日11/13ベンチマーク値を継承し換算。現金と数量は変更なし、手数料・税未計上。",
