@@ -5,7 +5,7 @@
   "base_currency": "JPY",
   "capital_jpy": 5000000,
   "start_trading_date": "2026-11-13",
-  "cash_jpy": 3395250,
+  "cash_jpy": 3978250,
   "holdings": [
     {
       "code": "8309",
@@ -13,23 +13,11 @@
       "quantity": 500,
       "average_cost_jpy": 1769.5,
       "acquisition_cost_jpy": 884750,
-      "market_price_jpy": 1716,
-      "market_value_jpy": 858000,
-      "unrealized_pnl_jpy": -26750,
-      "price_date": "2026-11-19",
+      "market_price_jpy": 1650.5,
+      "market_value_jpy": 825250,
+      "unrealized_pnl_jpy": -59500,
+      "price_date": "2026-11-20",
       "source_url": "https://s.kabutan.jp/stocks/8309/historical_prices/daily/"
-    },
-    {
-      "code": "6258",
-      "name": "平田機工",
-      "quantity": 200,
-      "average_cost_jpy": 3600,
-      "acquisition_cost_jpy": 720000,
-      "market_price_jpy": 3105,
-      "market_value_jpy": 621000,
-      "unrealized_pnl_jpy": -99000,
-      "price_date": "2026-11-19",
-      "source_url": "https://finance.yahoo.co.jp/quote/6258.T"
     }
   ],
   "orders": [
@@ -168,7 +156,7 @@
       "reference_close_date": "2026-11-19",
       "buying_power_hold_jpy": 0,
       "limit_price_jpy": null,
-      "status": "planned",
+      "status": "filled",
       "decision_sources": [
         "https://www.jpx.co.jp/calendar/",
         "https://fx.minkabu.jp/news/385008",
@@ -185,10 +173,38 @@
         "米国11月19日終値はダウ-2.19%、NASDAQ-2.25%、S&P500-2.02%。11月20日06:23JSTのCME日経先物は57,955円（大証日中引け比-3.08%）。11月23日は国内休場なので、景気敏感な6258を前場寄りで全株売却し、新規買いを控えて現金比率を高める。8309は業績改善・株主還元の既存理由を再点検し継続。"
       ],
       "review_condition": "仮想寄成売りの初回約定実値、特別気配・寄り遅延を引け後に検証。未約定なら保有継続として次営業日に判断をやり直す。半導体受注・自動車収益率・自社株取得実施状況が改善すれば再投資を検討する。",
-      "fill_price_jpy": null,
-      "fill_date": null,
-      "fill_source_url": null,
-      "notes": "11月20日9:00前の仮想売り注文。寄り時点の実価格未確認、現金・株式数量・評価額は朝の段階では変更しない。成行売りであり指値なし。売却の成立確認と損益計算は16:00の引け後担当に委ねる。"
+      "fill_price_jpy": 2915,
+      "fill_date": "2026-11-20",
+      "fill_source_url": "https://s.kabutan.jp/stocks/6258/historical_prices/daily/",
+      "notes": "11月20日9:00前の仮想売り注文。寄り時点の実価格未確認、現金・株式数量・評価額は朝の段階では変更しない。成行売りであり指値なし。売却の成立確認と損益計算は16:00の引け後担当に委ねる。 11/20引け後: 東証当日始値2,915円を株探日次OHLCで確認。前営業日終値3,105円、値幅下限2,405円、単元100株・保有200株を照合し200株の仮想売り約定。売却代金583,000円、取得総額720,000円、実現損益-137,000円。寄付初回売買の正確な時刻は未取得のため記入しない。",
+      "fill_quantity": 200,
+      "fill_method": "TSE_AM_OPEN: 2026-11-20 opening price from recorded daily OHLC; first trade time not separately verified",
+      "realized_pnl_jpy": -137000,
+      "fill_validation": {
+        "trading_day_source_url": "https://www.jpx.co.jp/corporate/about-jpx/calendar/",
+        "price_source_url": "https://s.kabutan.jp/stocks/6258/historical_prices/daily/",
+        "confirmation_source_url": "https://finance.yahoo.co.jp/quote/6258.T",
+        "price_limit_jpx_url": "https://www.jpx.co.jp/equities/trading/domestic/06.html",
+        "previous_close_jpy": 3105,
+        "daily_limit_down_jpy": 2405,
+        "daily_limit_up_jpy": 3805,
+        "opening_price_jpy": 2915,
+        "day_high_jpy": 3000,
+        "day_low_jpy": 2815,
+        "day_close_jpy": 2837,
+        "opening_not_at_limit_down": true,
+        "stock_lot_size": 100,
+        "lot_size_ok": true,
+        "holdings_available": 200,
+        "holdings_quantity_ok": true,
+        "order_recorded_before_market_open": true,
+        "source_checked_date": "2026-11-20",
+        "first_trade_clock_time_verified": false,
+        "settlement_type": "paper_trade_only"
+      },
+      "close_price_jpy": 2837,
+      "close_date": "2026-11-20",
+      "close_source_url": "https://s.kabutan.jp/stocks/6258/historical_prices/daily/"
     }
   ],
   "equity_history": [
@@ -323,6 +339,36 @@
         "topix_close": 3822.47,
         "nikkei_source_url": "https://minkabu.jp/news/4668984",
         "topix_source_url": "https://minkabu.jp/news/4668984"
+      }
+    },
+    {
+      "date": "2026-11-20",
+      "phase": "close",
+      "cash_jpy": 3978250,
+      "holdings_value_jpy": 825250,
+      "total_jpy": 4803500,
+      "topix_equivalent_jpy": 4660858,
+      "nikkei_equivalent_jpy": 4615185,
+      "price_status": "confirmed_close",
+      "sources": [
+        "https://www.jpx.co.jp/corporate/about-jpx/calendar/",
+        "https://s.kabutan.jp/stocks/6258/historical_prices/daily/",
+        "https://finance.yahoo.co.jp/quote/6258.T",
+        "https://s.kabutan.jp/stocks/8309/historical_prices/daily/",
+        "https://finance.yahoo.co.jp/quote/8309.T/history",
+        "https://www.zaikei.co.jp/article/20261120/878619.html",
+        "https://www.jpx.co.jp/equities/trading/domestic/06.html"
+      ],
+      "price_date": "2026-11-20",
+      "baseline_date": "2026-11-13",
+      "realized_pnl_today_jpy": -137000,
+      "realized_pnl_cumulative_jpy": -137000,
+      "unrealized_pnl_jpy": -59500,
+      "benchmarks": {
+        "nikkei_close": 56436.65,
+        "topix_close": 3674.22,
+        "nikkei_source_url": "https://www.zaikei.co.jp/article/20261120/878619.html",
+        "topix_source_url": "https://www.zaikei.co.jp/article/20261120/878619.html"
       }
     }
   ],
@@ -529,6 +575,25 @@
         "https://s.kabutan.jp/news/k202611190009/"
       ],
       "review_condition": "仮想寄成売りの初回約定実値、特別気配・寄り遅延を引け後に検証。未約定なら保有継続として次営業日に判断をやり直す。半導体受注・自動車収益率・自社株取得実施状況が改善すれば再投資を検討する。"
+    },
+    {
+      "id": "settlement-20261120",
+      "time_jst": "2026-11-20T16:00:00+09:00",
+      "type": "settlement",
+      "title": "11月20日：平田機工200株を寄成売り、総資産4,803,500円",
+      "body": "私は朝7:01に決定・記録した平田機工(6258)200株の前場寄成売りを、11月20日の東証始値2,915円で仮想約定とした。売却額583,000円、取得時の3,600円に対し実現損失137,000円で負け。売却判断後の当日終値は2,837円だった。8309は500株保有継続、東証終値1,650.5円で評価し、含み損59,500円。現金3,978,250円、株式825,250円、総資産4,803,500円（開始500万円比-196,500円、-3.93%、前日比-70,750円）。11/20日経平均56,436.65円、TOPIX3,674.22を11/13基準で指数換算。朝の判断理由・注文は変更していない。手数料・税は未計上。",
+      "order_ids": [
+        "20261120-am-6258-sell-200"
+      ],
+      "sources": [
+        "https://www.jpx.co.jp/corporate/about-jpx/calendar/",
+        "https://s.kabutan.jp/stocks/6258/historical_prices/daily/",
+        "https://finance.yahoo.co.jp/quote/6258.T",
+        "https://s.kabutan.jp/stocks/8309/historical_prices/daily/",
+        "https://finance.yahoo.co.jp/quote/8309.T/history",
+        "https://www.zaikei.co.jp/article/20261120/878619.html",
+        "https://www.jpx.co.jp/equities/trading/domestic/06.html"
+      ]
     }
   ],
   "last_decision": {
@@ -542,23 +607,27 @@
     "action": "sell_6258_market_on_open"
   },
   "last_settlement": {
-    "date": "2026-11-19",
-    "time_jst": "2026-11-19T16:00:12+09:00",
+    "date": "2026-11-20",
+    "time_jst": "2026-11-20T16:00:00+09:00",
     "status": "completed",
-    "filled_order_ids": [],
-    "cash_jpy": 3395250,
-    "holdings_value_jpy": 1479000,
-    "total_jpy": 4874250,
-    "unrealized_pnl_jpy": -125750,
+    "filled_order_ids": [
+      "20261120-am-6258-sell-200"
+    ],
+    "cash_jpy": 3978250,
+    "holdings_value_jpy": 825250,
+    "total_jpy": 4803500,
+    "realized_pnl_today_jpy": -137000,
+    "unrealized_pnl_jpy": -59500,
     "reference_price_status": "confirmed",
     "benchmark_baseline_date": "2026-11-13",
     "sources": [
       "https://www.jpx.co.jp/corporate/about-jpx/calendar/",
-      "https://s.kabutan.jp/stocks/8309/historical_prices/daily/",
+      "https://s.kabutan.jp/stocks/6258/historical_prices/daily/",
       "https://finance.yahoo.co.jp/quote/6258.T",
-      "https://minkabu.jp/news/4668984",
-      "https://s.kabutan.jp/news/n202611131090/",
-      "https://s.kabutan.jp/news/n202611131090/"
+      "https://s.kabutan.jp/stocks/8309/historical_prices/daily/",
+      "https://finance.yahoo.co.jp/quote/8309.T/history",
+      "https://www.zaikei.co.jp/article/20261120/878619.html",
+      "https://www.jpx.co.jp/equities/trading/domestic/06.html"
     ]
   },
   "run_logs": [
@@ -885,9 +954,42 @@
         "no_actual_trade": true
       },
       "note": "2026/11/20(金)朝。米11/19主要指数急落、日経先物、6258 11/19決算説明会Q&Aと株価推移、8309の株価、8725/8766の11/19決算を比較。6258の成行売り200株を予定。8309継続。売買約定・損益・現金・保有数量はこの段階では未変更。"
+    },
+    {
+      "id": "settlement-20261120",
+      "time_jst": "2026-11-20T16:00:00+09:00",
+      "slot": "settlement",
+      "status": "completed",
+      "order_ids": [
+        "20261120-am-6258-sell-200"
+      ],
+      "sources": [
+        "https://www.jpx.co.jp/corporate/about-jpx/calendar/",
+        "https://s.kabutan.jp/stocks/6258/historical_prices/daily/",
+        "https://finance.yahoo.co.jp/quote/6258.T",
+        "https://s.kabutan.jp/stocks/8309/historical_prices/daily/",
+        "https://finance.yahoo.co.jp/quote/8309.T/history",
+        "https://www.zaikei.co.jp/article/20261120/878619.html",
+        "https://www.jpx.co.jp/equities/trading/domestic/06.html"
+      ],
+      "checks": {
+        "trading_day": true,
+        "pre_open_decision_saved": true,
+        "morning_order_unchanged": true,
+        "opening_price_6258_verified": true,
+        "market_open_fill_not_at_daily_limit": true,
+        "lot_size_ok": true,
+        "holdings_sale_quantity_ok": true,
+        "closing_price_8309_verified": true,
+        "benchmark_closes_verified": true,
+        "arithmetic_valid": true,
+        "duplicate_settlement": false,
+        "no_actual_trade": true
+      },
+      "note": "11/20 6258 200株を寄成2,915円で仮想売却（実現-137,000円）、8309は500株継続（終値1,650.5円）。株価指数は15:31JSTの引け速報。"
     }
   ],
-  "data_quality": "2026-11-13 16:04 JST: 寄成500株は市場の初回売買09:05の始値1769.5円、同日終値1786.5円を出典つきで確認。値幅制限±400円、拘束額1044750円と現金余力も検証。朝判断は不変。日経平均61142.35・TOPIX3941.57を開始日終値として記録。手数料設定なし、税・手数料未計上。 2026-11-16 16:05 JST: 6258の初回09:14始値3600円・15:30終値3350円、8309終値1786.5円、日経平均59662.02・TOPIX3901.37を公開元で照合。成行拘束額790000円に対し事前資金4115250円あり。手数料・税は未計上。 2026-11-17 16時台JST: 朝の独立判断はno_trade・注文0件。JPX営業日と8309/6258の15:30東証終値1712円/3120円、指数日経平均58860.43・TOPIX3840.02をYahoo!ファイナンスと株探の当日値で確認した。始値・値幅制限による新規約定検証は注文がないため対象外。現金・数量不変、手数料・税未計上。基準日2026-11-13の指数値はYahoo!ファイナンスの時系列で確認。 2026-11-18 15:59 JST: 11/18の朝はno_trade、注文0件。JPX 2026年休業日一覧から営業日と確認。Yahoo!ファイナンスの15:30東証終値8309=1697.5円、6258=3200円、日経平均59024.28、TOPIX3824.00を確認。開始日11/13の記録済み確定ベンチマーク値に基づき換算。現金・株数不変。手数料・税未計上。 2026-11-19 16時台JST: 11/19はJPX営業日。朝はno_trade、注文0件。株探の当日15:30値8309=1716円、Yahoo!ファイナンスの当日15:30値6258=3105円を確認。フィスコの15:35の当日大引け速報で日経平均59444.21、TOPIX3822.47を照合。開始日11/13ベンチマーク値を継承し換算。現金と数量は変更なし、手数料・税未計上。",
+  "data_quality": "2026-11-13 16:04 JST: 寄成500株は市場の初回売買09:05の始値1769.5円、同日終値1786.5円を出典つきで確認。値幅制限±400円、拘束額1044750円と現金余力も検証。朝判断は不変。日経平均61142.35・TOPIX3941.57を開始日終値として記録。手数料設定なし、税・手数料未計上。 2026-11-16 16:05 JST: 6258の初回09:14始値3600円・15:30終値3350円、8309終値1786.5円、日経平均59662.02・TOPIX3901.37を公開元で照合。成行拘束額790000円に対し事前資金4115250円あり。手数料・税は未計上。 2026-11-17 16時台JST: 朝の独立判断はno_trade・注文0件。JPX営業日と8309/6258の15:30東証終値1712円/3120円、指数日経平均58860.43・TOPIX3840.02をYahoo!ファイナンスと株探の当日値で確認した。始値・値幅制限による新規約定検証は注文がないため対象外。現金・数量不変、手数料・税未計上。基準日2026-11-13の指数値はYahoo!ファイナンスの時系列で確認。 2026-11-18 15:59 JST: 11/18の朝はno_trade、注文0件。JPX 2026年休業日一覧から営業日と確認。Yahoo!ファイナンスの15:30東証終値8309=1697.5円、6258=3200円、日経平均59024.28、TOPIX3824.00を確認。開始日11/13の記録済み確定ベンチマーク値に基づき換算。現金・株数不変。手数料・税未計上。 2026-11-19 16時台JST: 11/19はJPX営業日。朝はno_trade、注文0件。株探の当日15:30値8309=1716円、Yahoo!ファイナンスの当日15:30値6258=3105円を確認。フィスコの15:35の当日大引け速報で日経平均59444.21、TOPIX3822.47を照合。開始日11/13ベンチマーク値を継承し換算。現金と数量は変更なし、手数料・税未計上。 2026-11-20 16:00 JST: 11/20はJPX営業日。朝07:01記録済み6258売り200株の東証始値2915円（高3000/安2815/終2837）を株探で確認、同時にYahoo!終値2837円を照合。前日終値3105円からの値幅下限2405円に届かず、保有数量200・単元100を満たす。正確な初回売買時刻は未確認（仮定しない）。寄成売り583000円、実現損失137000円。8309は株探・Yahoo!の15:30東証終値1650.5円で評価。日経平均56436.65、TOPIX3674.22はフィスコ15:31大引け速報で照合。現金3978250円、残高8309 500株、総資産4803500円。手数料・税未計上。",
   "benchmark_baseline": {
     "date": "2026-11-13",
     "nikkei_close": 61142.35,
