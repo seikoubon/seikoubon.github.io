@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "mode": "paper_only",
+  "initial_capital_jpy": 5000000,
+  "baseline": {
+    "date": "2026-11-20",
+    "existing_portfolio_value_jpy": 4803500
+  },
+  "journal": [],
+  "orders": [],
+  "cash_jpy": 5000000,
+  "holdings": [],
+  "closes": []
+}
