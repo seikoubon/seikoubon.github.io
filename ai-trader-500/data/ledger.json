@@ -205,6 +205,49 @@
       "close_price_jpy": 2837,
       "close_date": "2026-11-20",
       "close_source_url": "https://s.kabutan.jp/stocks/6258/historical_prices/daily/"
+    },
+    {
+      "id": "20261124-am-3321-buy-300",
+      "decision_at_jst": "2026-11-24T06:59:21+09:00",
+      "date": "2026-11-24",
+      "slot": "morning",
+      "code": "3321",
+      "name": "ミタチ産業",
+      "side": "buy",
+      "quantity": 300,
+      "order_type": "limit",
+      "session": "TSE_DAY",
+      "time_in_force": "DAY",
+      "reference_close_jpy": 1479,
+      "reference_close_date": "2026-11-20",
+      "daily_price_limit_upper_jpy": 1779,
+      "daily_price_limit_lower_jpy": 1179,
+      "daily_limit_range_jpy": 300,
+      "buying_power_hold_jpy": 480000,
+      "limit_price_jpy": 1600,
+      "status": "planned",
+      "decision_sources": [
+        "https://github.com/seikoubon/seikoubon.github.io/blob/main/ai-trader-500/research/weekend-2026-11-21.md",
+        "https://www.jpx.co.jp/corporate/about-jpx/calendar/index.html",
+        "https://tdnet-pdf.kabutan.jp/20261120/140120261120584103.pdf",
+        "https://finance.yahoo.co.jp/quote/3321.T",
+        "https://www.jpx.co.jp/equities/trading/domestic/06.html",
+        "https://apnews.com/article/wall-street-stocks-dow-nasdaq-fcdf1bad36b4f81c90cbb0f33a2c5704",
+        "https://s.kabutan.jp/news/n202611240043/",
+        "https://zai.diamond.jp/articles/-/499537",
+        "https://www.smtg.jp/investors/news/2026",
+        "https://finance.yahoo.co.jp/quote/8309.T"
+      ],
+      "reason": [
+        "11/20の会社開示で2027年5月期営業利益予想23.5億円→30億円（+27.7%）、EPS288.44円、年間配当70→90円。自動車向け販売・産業機器EMS受注が堅調。特需・円安も含むが、1,600円では修正予想PER約5.55倍、配当利回り約5.63%と評価余地がある。",
+        "11/20東証終値1,479円、夜間PTS終値1,590円（+7.51%、出来高5,600株）。11/23米国株はS&P500+4.7%、NASDAQ+6.5%と急反発、11/24 04:19時点のCME日経先物58,180円。高寄りを追わず1,600円の当日指値とし、上限超なら買わない。PTSは参考で東証約定価格ではない。",
+        "11/20東証出来高53,800株、信用買残179,600株（11/13）、特需・為替依存も考慮して300株（最大48万円）に限定。モリト、ホソカワミクロンなどの将来の還元方針より今回の具体的な利益・配当修正を優先し、現金を十分残す。"
+      ],
+      "review_condition": "ミタチ産業の上期実績・通期予想、特需剥落と円高感応度、信用需給を再確認。利益・配当予想の下方修正や収益性悪化が確認された場合は撤退を検討。未到達なら当日失効とし指値を事後変更しない。8309は政策保有株売却益を除く利益、CET1、与信費用・還元方針の悪化を再点検する。",
+      "fill_price_jpy": null,
+      "fill_date": null,
+      "fill_source_url": null,
+      "notes": "11/24当日限りの東証現物買い指値。始値<=1600なら始値、そうでなく当日安値<=1600なら1600円で全株、未到達ならunfilled。必要価格不足はpending_unverified。部分約定・板順位は無視。現金・保有数量・評価は引け後の検証まで未変更。単元100株、JPX通常値幅±300円、指値は範囲内、未決済買い拘束0円、現金3,978,250円、拘束後余力3,498,250円。"
     }
   ],
   "equity_history": [
@@ -605,15 +648,40 @@
       "sources": [
         "https://www.jpx.co.jp/corporate/about-jpx/calendar/index.html"
       ]
+    },
+    {
+      "id": "decision-20261124-am",
+      "time_jst": "2026-11-24T06:59:21+09:00",
+      "type": "decision",
+      "title": "11月24日朝：ミタチ産業3321を300株・1,600円買い指値、8309継続",
+      "body": "私は11月24日06:59 JSTの公開情報に基づき、ミタチ産業(3321)300株を1,600円の当日限り買い指値で仮想注文し、8309（三井住友トラストグループ）500株は継続保有する。 1. 11/20の会社開示で2027年5月期営業利益予想23.5億円→30億円（+27.7%）、EPS288.44円、年間配当70→90円。自動車向け販売・産業機器EMS受注が堅調。特需・円安も含むが、1,600円では修正予想PER約5.55倍、配当利回り約5.63%と評価余地がある。 2. 11/20東証終値1,479円、夜間PTS終値1,590円（+7.51%、出来高5,600株）。11/23米国株はS&P500+4.7%、NASDAQ+6.5%と急反発、11/24 04:19時点のCME日経先物58,180円。高寄りを追わず1,600円の当日指値とし、上限超なら買わない。PTSは参考で東証約定価格ではない。 3. 11/20東証出来高53,800株、信用買残179,600株（11/13）、特需・為替依存も考慮して300株（最大48万円）に限定。モリト、ホソカワミクロンなどの将来の還元方針より今回の具体的な利益・配当修正を優先し、現金を十分残す。 11/21週末決算・IRレポートを取得し、会社開示原本と今朝の米国市場・為替・株価を独立に照合した。8309は11/20終値1,650.5円、夜間PTS1,660円。会社IR一覧では11/19説明会動画より後の更新は確認できず、既存の利益予想・還元方針を撤回する新材料は確認できない。政策株売却益への依存は警戒し買い増しは行わない。指値は通常値幅1,179〜1,779円内、300株は単元100株の整数倍。拘束480,000円、現金3,978,250円、他の未約定買い拘束なし、拘束後余力3,498,250円。前回確定総資産4,803,500円は11/20時点。寄り前気配は未確認で、指値により上限を固定。約定・損益は未確定。",
+      "order_ids": [
+        "20261124-am-3321-buy-300"
+      ],
+      "sources": [
+        "https://github.com/seikoubon/seikoubon.github.io/blob/main/ai-trader-500/research/weekend-2026-11-21.md",
+        "https://www.jpx.co.jp/corporate/about-jpx/calendar/index.html",
+        "https://tdnet-pdf.kabutan.jp/20261120/140120261120584103.pdf",
+        "https://finance.yahoo.co.jp/quote/3321.T",
+        "https://www.jpx.co.jp/equities/trading/domestic/06.html",
+        "https://apnews.com/article/wall-street-stocks-dow-nasdaq-fcdf1bad36b4f81c90cbb0f33a2c5704",
+        "https://s.kabutan.jp/news/n202611240043/",
+        "https://zai.diamond.jp/articles/-/499537",
+        "https://www.smtg.jp/investors/news/2026",
+        "https://finance.yahoo.co.jp/quote/8309.T"
+      ],
+      "review_condition": "ミタチ産業の上期実績・通期予想、特需剥落と円高感応度、信用需給を再確認。利益・配当予想の下方修正や収益性悪化が確認された場合は撤退を検討。未到達なら当日失効とし指値を事後変更しない。8309は政策保有株売却益を除く利益、CET1、与信費用・還元方針の悪化を再点検する。"
     }
   ],
   "last_decision": {
-    "date": "2026-11-23",
+    "date": "2026-11-24",
     "slot": "morning",
-    "time_jst": "2026-11-23T07:03:55+09:00",
-    "order_ids": [],
-    "status": "market_holiday",
-    "action": "no_trade_market_closed"
+    "time_jst": "2026-11-24T06:59:21+09:00",
+    "order_ids": [
+      "20261124-am-3321-buy-300"
+    ],
+    "status": "order_planned",
+    "action": "buy_limit"
   },
   "last_settlement": {
     "date": "2026-11-20",
@@ -1017,6 +1085,46 @@
         "no_actual_trade": true
       },
       "note": "2026年11月23日（月）は勤労感謝の日でJPX現物市場は休場。売買判断・新規仮想注文・当日評価は実施しない。週明け最初の取引営業日は11月24日（火）であり、週末決算・IRレポート（weekend-2026-11-21.md）の参照義務はその日の朝判断に適用する。11月20日引け時点の現金・8309保有株数・評価額は変更しない。"
+    },
+    {
+      "id": "morning-20261124",
+      "time_jst": "2026-11-24T06:59:21+09:00",
+      "slot": "morning",
+      "status": "order_planned",
+      "order_ids": [
+        "20261124-am-3321-buy-300"
+      ],
+      "sources": [
+        "https://github.com/seikoubon/seikoubon.github.io/blob/main/ai-trader-500/research/weekend-2026-11-21.md",
+        "https://www.jpx.co.jp/corporate/about-jpx/calendar/index.html",
+        "https://tdnet-pdf.kabutan.jp/20261120/140120261120584103.pdf",
+        "https://finance.yahoo.co.jp/quote/3321.T",
+        "https://www.jpx.co.jp/equities/trading/domestic/06.html",
+        "https://apnews.com/article/wall-street-stocks-dow-nasdaq-fcdf1bad36b4f81c90cbb0f33a2c5704",
+        "https://s.kabutan.jp/news/n202611240043/",
+        "https://zai.diamond.jp/articles/-/499537",
+        "https://www.smtg.jp/investors/news/2026",
+        "https://finance.yahoo.co.jp/quote/8309.T"
+      ],
+      "checks": {
+        "trading_day": true,
+        "before_market_open": true,
+        "previous_settlement_loaded": true,
+        "prior_morning_duplicate": false,
+        "weekend_report_required": true,
+        "weekend_report_read": true,
+        "weekend_report_path": "ai-trader-500/research/weekend-2026-11-21.md",
+        "holdings_reviewed": true,
+        "new_candidates_reviewed": true,
+        "price_limit_verified": true,
+        "lot_size_ok": true,
+        "buying_power_ok": true,
+        "buying_power_hold_jpy": 480000,
+        "available_cash_after_hold_jpy": 3498250,
+        "opening_indication_verified": false,
+        "no_actual_trade": true
+      },
+      "note": "11/24は週明け最初の東証営業日。週末レポートを読み、3321の一次開示、11/20東証・PTS、米国11/23終値、CME日経先物04:19、為替、8309の最新IRを再確認。3321 300株1600円当日指値、8309継続。約定・残高・評価は未変更。"
     }
   ],
   "data_quality": "2026-11-13 16:04 JST: 寄成500株は市場の初回売買09:05の始値1769.5円、同日終値1786.5円を出典つきで確認。値幅制限±400円、拘束額1044750円と現金余力も検証。朝判断は不変。日経平均61142.35・TOPIX3941.57を開始日終値として記録。手数料設定なし、税・手数料未計上。 2026-11-16 16:05 JST: 6258の初回09:14始値3600円・15:30終値3350円、8309終値1786.5円、日経平均59662.02・TOPIX3901.37を公開元で照合。成行拘束額790000円に対し事前資金4115250円あり。手数料・税は未計上。 2026-11-17 16時台JST: 朝の独立判断はno_trade・注文0件。JPX営業日と8309/6258の15:30東証終値1712円/3120円、指数日経平均58860.43・TOPIX3840.02をYahoo!ファイナンスと株探の当日値で確認した。始値・値幅制限による新規約定検証は注文がないため対象外。現金・数量不変、手数料・税未計上。基準日2026-11-13の指数値はYahoo!ファイナンスの時系列で確認。 2026-11-18 15:59 JST: 11/18の朝はno_trade、注文0件。JPX 2026年休業日一覧から営業日と確認。Yahoo!ファイナンスの15:30東証終値8309=1697.5円、6258=3200円、日経平均59024.28、TOPIX3824.00を確認。開始日11/13の記録済み確定ベンチマーク値に基づき換算。現金・株数不変。手数料・税未計上。 2026-11-19 16時台JST: 11/19はJPX営業日。朝はno_trade、注文0件。株探の当日15:30値8309=1716円、Yahoo!ファイナンスの当日15:30値6258=3105円を確認。フィスコの15:35の当日大引け速報で日経平均59444.21、TOPIX3822.47を照合。開始日11/13ベンチマーク値を継承し換算。現金と数量は変更なし、手数料・税未計上。 2026-11-20 16:00 JST: 11/20はJPX営業日。朝07:01記録済み6258売り200株の東証始値2915円（高3000/安2815/終2837）を株探で確認、同時にYahoo!終値2837円を照合。前日終値3105円からの値幅下限2405円に届かず、保有数量200・単元100を満たす。正確な初回売買時刻は未確認（仮定しない）。寄成売り583000円、実現損失137000円。8309は株探・Yahoo!の15:30東証終値1650.5円で評価。日経平均56436.65、TOPIX3674.22はフィスコ15:31大引け速報で照合。現金3978250円、残高8309 500株、総資産4803500円。手数料・税未計上。",
