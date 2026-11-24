@@ -13,11 +13,11 @@
       "quantity": 500,
       "average_cost_jpy": 1769.5,
       "acquisition_cost_jpy": 884750,
-      "market_price_jpy": 1650.5,
-      "market_value_jpy": 825250,
-      "unrealized_pnl_jpy": -59500,
-      "price_date": "2026-11-20",
-      "source_url": "https://s.kabutan.jp/stocks/8309/historical_prices/daily/"
+      "market_price_jpy": 1678,
+      "market_value_jpy": 839000,
+      "unrealized_pnl_jpy": -45750,
+      "price_date": "2026-11-24",
+      "source_url": "https://finance.yahoo.co.jp/quote/8309.T"
     }
   ],
   "orders": [
@@ -225,7 +225,7 @@
       "daily_limit_range_jpy": 300,
       "buying_power_hold_jpy": 480000,
       "limit_price_jpy": 1600,
-      "status": "planned",
+      "status": "unfilled",
       "decision_sources": [
         "https://github.com/seikoubon/seikoubon.github.io/blob/main/ai-trader-500/research/weekend-2026-11-21.md",
         "https://www.jpx.co.jp/corporate/about-jpx/calendar/index.html",
@@ -247,7 +247,34 @@
       "fill_price_jpy": null,
       "fill_date": null,
       "fill_source_url": null,
-      "notes": "11/24当日限りの東証現物買い指値。始値<=1600なら始値、そうでなく当日安値<=1600なら1600円で全株、未到達ならunfilled。必要価格不足はpending_unverified。部分約定・板順位は無視。現金・保有数量・評価は引け後の検証まで未変更。単元100株、JPX通常値幅±300円、指値は範囲内、未決済買い拘束0円、現金3,978,250円、拘束後余力3,498,250円。"
+      "notes": "11/24当日限りの東証現物買い指値。始値<=1600なら始値、そうでなく当日安値<=1600なら1600円で全株、未到達ならunfilled。必要価格不足はpending_unverified。部分約定・板順位は無視。現金・保有数量・評価は引け後の検証まで未変更。単元100株、JPX通常値幅±300円、指値は範囲内、未決済買い拘束0円、現金3,978,250円、拘束後余力3,498,250円。 11/24引け後: 東証始値1,701円（09:15）、高値1,732円、安値1,651円、15:30終値1,720円。指値1,600円に未到達のため当日失効（unfilled）、仮想約定0株。拘束48万円を解除し、現金・株数は不変。",
+      "fill_quantity": 0,
+      "close_price_jpy": 1720,
+      "close_date": "2026-11-24",
+      "close_source_url": "https://finance.yahoo.co.jp/quote/3321.T",
+      "fill_validation": {
+        "trading_day_source_url": "https://www.jpx.co.jp/corporate/about-jpx/calendar/",
+        "price_source_url": "https://finance.yahoo.co.jp/quote/3321.T",
+        "confirmation_source_url": "https://finance.matsui.co.jp/stock/3321/index",
+        "price_limit_jpx_url": "https://www.jpx.co.jp/equities/trading/domestic/06.html",
+        "previous_close_jpy": 1479,
+        "daily_limit_down_jpy": 1179,
+        "daily_limit_up_jpy": 1779,
+        "opening_price_jpy": 1701,
+        "day_high_jpy": 1732,
+        "day_low_jpy": 1651,
+        "day_close_jpy": 1720,
+        "first_print_at": "09:15",
+        "limit_price_jpy": 1600,
+        "limit_reached": false,
+        "buying_power_hold_jpy": 480000,
+        "buying_power_ok": true,
+        "stock_lot_size": 100,
+        "lot_size_ok": true,
+        "order_recorded_before_market_open": true,
+        "source_checked_date": "2026-11-24",
+        "settlement_type": "paper_trade_only"
+      }
     }
   ],
   "equity_history": [
@@ -412,6 +439,38 @@
         "topix_close": 3674.22,
         "nikkei_source_url": "https://www.zaikei.co.jp/article/20261120/878619.html",
         "topix_source_url": "https://www.zaikei.co.jp/article/20261120/878619.html"
+      }
+    },
+    {
+      "date": "2026-11-24",
+      "phase": "close",
+      "cash_jpy": 3978250,
+      "holdings_value_jpy": 839000,
+      "total_jpy": 4817250,
+      "topix_equivalent_jpy": 4775863,
+      "nikkei_equivalent_jpy": 4795746,
+      "price_status": "confirmed_close",
+      "sources": [
+        "https://www.jpx.co.jp/corporate/about-jpx/calendar/",
+        "https://www.jpx.co.jp/equities/trading/domestic/06.html",
+        "https://finance.yahoo.co.jp/quote/3321.T",
+        "https://finance.matsui.co.jp/stock/3321/index",
+        "https://finance.yahoo.co.jp/quote/8309.T",
+        "https://indexes.nikkei.co.jp/nkave",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/news/n202611240974/",
+        "https://s.kabutan.jp/news/n202611131090/"
+      ],
+      "price_date": "2026-11-24",
+      "baseline_date": "2026-11-13",
+      "realized_pnl_today_jpy": 0,
+      "realized_pnl_cumulative_jpy": -137000,
+      "unrealized_pnl_jpy": -45750,
+      "benchmarks": {
+        "nikkei_close": 58644.63,
+        "topix_close": 3764.88,
+        "nikkei_source_url": "https://indexes.nikkei.co.jp/nkave",
+        "topix_source_url": "https://finance.yahoo.co.jp/quote/998405.T/history"
       }
     }
   ],
@@ -671,6 +730,27 @@
         "https://finance.yahoo.co.jp/quote/8309.T"
       ],
       "review_condition": "ミタチ産業の上期実績・通期予想、特需剥落と円高感応度、信用需給を再確認。利益・配当予想の下方修正や収益性悪化が確認された場合は撤退を検討。未到達なら当日失効とし指値を事後変更しない。8309は政策保有株売却益を除く利益、CET1、与信費用・還元方針の悪化を再点検する。"
+    },
+    {
+      "id": "settlement-20261124",
+      "time_jst": "2026-11-24T15:56:43+09:00",
+      "type": "settlement",
+      "title": "11月24日：ミタチ産業は指値未到達、総資産4,817,250円",
+      "body": "私は朝06:59に決めたミタチ産業(3321)300株・1,600円の当日買い指値を変更しなかった。東証始値1,701円（09:15）、高値1,732円、安値1,651円、終値1,720円で指値未到達のため未約定。拘束48万円を解除し、現金3,978,250円は不変。三井住友トラストグループ(8309)500株を継続保有し、終値1,678円、評価額839,000円、含み損45,750円。総資産4,817,250円（開始比−182,750円、−3.66%、前営業日比＋13,750円）で本日はプラスだが開始比は負け。新規取引の勝敗は未約定のためなし。日経平均58,644.63、TOPIX3,764.88を11/13基準で換算。朝の判断理由は不変。税・手数料未計上。",
+      "order_ids": [
+        "20261124-am-3321-buy-300"
+      ],
+      "sources": [
+        "https://www.jpx.co.jp/corporate/about-jpx/calendar/",
+        "https://www.jpx.co.jp/equities/trading/domestic/06.html",
+        "https://finance.yahoo.co.jp/quote/3321.T",
+        "https://finance.matsui.co.jp/stock/3321/index",
+        "https://finance.yahoo.co.jp/quote/8309.T",
+        "https://indexes.nikkei.co.jp/nkave",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/news/n202611240974/",
+        "https://s.kabutan.jp/news/n202611131090/"
+      ]
     }
   ],
   "last_decision": {
@@ -684,27 +764,30 @@
     "action": "buy_limit"
   },
   "last_settlement": {
-    "date": "2026-11-20",
-    "time_jst": "2026-11-20T16:00:00+09:00",
+    "date": "2026-11-24",
+    "time_jst": "2026-11-24T15:56:43+09:00",
     "status": "completed",
-    "filled_order_ids": [
-      "20261120-am-6258-sell-200"
+    "filled_order_ids": [],
+    "unfilled_order_ids": [
+      "20261124-am-3321-buy-300"
     ],
     "cash_jpy": 3978250,
-    "holdings_value_jpy": 825250,
-    "total_jpy": 4803500,
-    "realized_pnl_today_jpy": -137000,
-    "unrealized_pnl_jpy": -59500,
+    "holdings_value_jpy": 839000,
+    "total_jpy": 4817250,
+    "realized_pnl_today_jpy": 0,
+    "unrealized_pnl_jpy": -45750,
     "reference_price_status": "confirmed",
     "benchmark_baseline_date": "2026-11-13",
     "sources": [
       "https://www.jpx.co.jp/corporate/about-jpx/calendar/",
-      "https://s.kabutan.jp/stocks/6258/historical_prices/daily/",
-      "https://finance.yahoo.co.jp/quote/6258.T",
-      "https://s.kabutan.jp/stocks/8309/historical_prices/daily/",
-      "https://finance.yahoo.co.jp/quote/8309.T/history",
-      "https://www.zaikei.co.jp/article/20261120/878619.html",
-      "https://www.jpx.co.jp/equities/trading/domestic/06.html"
+      "https://www.jpx.co.jp/equities/trading/domestic/06.html",
+      "https://finance.yahoo.co.jp/quote/3321.T",
+      "https://finance.matsui.co.jp/stock/3321/index",
+      "https://finance.yahoo.co.jp/quote/8309.T",
+      "https://indexes.nikkei.co.jp/nkave",
+      "https://finance.yahoo.co.jp/quote/998405.T/history",
+      "https://s.kabutan.jp/news/n202611240974/",
+      "https://s.kabutan.jp/news/n202611131090/"
     ]
   },
   "run_logs": [
@@ -1125,9 +1208,46 @@
         "no_actual_trade": true
       },
       "note": "11/24は週明け最初の東証営業日。週末レポートを読み、3321の一次開示、11/20東証・PTS、米国11/23終値、CME日経先物04:19、為替、8309の最新IRを再確認。3321 300株1600円当日指値、8309継続。約定・残高・評価は未変更。"
+    },
+    {
+      "id": "settlement-20261124",
+      "time_jst": "2026-11-24T15:56:43+09:00",
+      "slot": "settlement",
+      "status": "completed",
+      "order_ids": [
+        "20261124-am-3321-buy-300"
+      ],
+      "sources": [
+        "https://www.jpx.co.jp/corporate/about-jpx/calendar/",
+        "https://www.jpx.co.jp/equities/trading/domestic/06.html",
+        "https://finance.yahoo.co.jp/quote/3321.T",
+        "https://finance.matsui.co.jp/stock/3321/index",
+        "https://finance.yahoo.co.jp/quote/8309.T",
+        "https://indexes.nikkei.co.jp/nkave",
+        "https://finance.yahoo.co.jp/quote/998405.T/history",
+        "https://s.kabutan.jp/news/n202611240974/",
+        "https://s.kabutan.jp/news/n202611131090/"
+      ],
+      "checks": {
+        "trading_day": true,
+        "pre_open_decision_saved": true,
+        "morning_order_unchanged": true,
+        "opening_price_3321_verified": true,
+        "day_low_3321_verified": true,
+        "limit_reached": false,
+        "price_limit_verified": true,
+        "lot_size_ok": true,
+        "buying_power_ok": true,
+        "closing_price_8309_verified": true,
+        "benchmark_closes_verified": true,
+        "arithmetic_valid": true,
+        "duplicate_settlement": false,
+        "no_actual_trade": true
+      },
+      "note": "3321の指値1,600円に対し当日安値1,651円で未約定。8309終値1,678円。現金・数量不変。指数は大引け値、基準日は11/13。"
     }
   ],
-  "data_quality": "2026-11-13 16:04 JST: 寄成500株は市場の初回売買09:05の始値1769.5円、同日終値1786.5円を出典つきで確認。値幅制限±400円、拘束額1044750円と現金余力も検証。朝判断は不変。日経平均61142.35・TOPIX3941.57を開始日終値として記録。手数料設定なし、税・手数料未計上。 2026-11-16 16:05 JST: 6258の初回09:14始値3600円・15:30終値3350円、8309終値1786.5円、日経平均59662.02・TOPIX3901.37を公開元で照合。成行拘束額790000円に対し事前資金4115250円あり。手数料・税は未計上。 2026-11-17 16時台JST: 朝の独立判断はno_trade・注文0件。JPX営業日と8309/6258の15:30東証終値1712円/3120円、指数日経平均58860.43・TOPIX3840.02をYahoo!ファイナンスと株探の当日値で確認した。始値・値幅制限による新規約定検証は注文がないため対象外。現金・数量不変、手数料・税未計上。基準日2026-11-13の指数値はYahoo!ファイナンスの時系列で確認。 2026-11-18 15:59 JST: 11/18の朝はno_trade、注文0件。JPX 2026年休業日一覧から営業日と確認。Yahoo!ファイナンスの15:30東証終値8309=1697.5円、6258=3200円、日経平均59024.28、TOPIX3824.00を確認。開始日11/13の記録済み確定ベンチマーク値に基づき換算。現金・株数不変。手数料・税未計上。 2026-11-19 16時台JST: 11/19はJPX営業日。朝はno_trade、注文0件。株探の当日15:30値8309=1716円、Yahoo!ファイナンスの当日15:30値6258=3105円を確認。フィスコの15:35の当日大引け速報で日経平均59444.21、TOPIX3822.47を照合。開始日11/13ベンチマーク値を継承し換算。現金と数量は変更なし、手数料・税未計上。 2026-11-20 16:00 JST: 11/20はJPX営業日。朝07:01記録済み6258売り200株の東証始値2915円（高3000/安2815/終2837）を株探で確認、同時にYahoo!終値2837円を照合。前日終値3105円からの値幅下限2405円に届かず、保有数量200・単元100を満たす。正確な初回売買時刻は未確認（仮定しない）。寄成売り583000円、実現損失137000円。8309は株探・Yahoo!の15:30東証終値1650.5円で評価。日経平均56436.65、TOPIX3674.22はフィスコ15:31大引け速報で照合。現金3978250円、残高8309 500株、総資産4803500円。手数料・税未計上。",
+  "data_quality": "2026-11-13 16:04 JST: 寄成500株は市場の初回売買09:05の始値1769.5円、同日終値1786.5円を出典つきで確認。値幅制限±400円、拘束額1044750円と現金余力も検証。朝判断は不変。日経平均61142.35・TOPIX3941.57を開始日終値として記録。手数料設定なし、税・手数料未計上。 2026-11-16 16:05 JST: 6258の初回09:14始値3600円・15:30終値3350円、8309終値1786.5円、日経平均59662.02・TOPIX3901.37を公開元で照合。成行拘束額790000円に対し事前資金4115250円あり。手数料・税は未計上。 2026-11-17 16時台JST: 朝の独立判断はno_trade・注文0件。JPX営業日と8309/6258の15:30東証終値1712円/3120円、指数日経平均58860.43・TOPIX3840.02をYahoo!ファイナンスと株探の当日値で確認した。始値・値幅制限による新規約定検証は注文がないため対象外。現金・数量不変、手数料・税未計上。基準日2026-11-13の指数値はYahoo!ファイナンスの時系列で確認。 2026-11-18 15:59 JST: 11/18の朝はno_trade、注文0件。JPX 2026年休業日一覧から営業日と確認。Yahoo!ファイナンスの15:30東証終値8309=1697.5円、6258=3200円、日経平均59024.28、TOPIX3824.00を確認。開始日11/13の記録済み確定ベンチマーク値に基づき換算。現金・株数不変。手数料・税未計上。 2026-11-19 16時台JST: 11/19はJPX営業日。朝はno_trade、注文0件。株探の当日15:30値8309=1716円、Yahoo!ファイナンスの当日15:30値6258=3105円を確認。フィスコの15:35の当日大引け速報で日経平均59444.21、TOPIX3822.47を照合。開始日11/13ベンチマーク値を継承し換算。現金と数量は変更なし、手数料・税未計上。 2026-11-20 16:00 JST: 11/20はJPX営業日。朝07:01記録済み6258売り200株の東証始値2915円（高3000/安2815/終2837）を株探で確認、同時にYahoo!終値2837円を照合。前日終値3105円からの値幅下限2405円に届かず、保有数量200・単元100を満たす。正確な初回売買時刻は未確認（仮定しない）。寄成売り583000円、実現損失137000円。8309は株探・Yahoo!の15:30東証終値1650.5円で評価。日経平均56436.65、TOPIX3674.22はフィスコ15:31大引け速報で照合。現金3978250円、残高8309 500株、総資産4803500円。手数料・税未計上。 2026-11-24 15:56 JST開始の引け後照合: JPX営業日確認。3321の東証始値1701・高値1732・安値1651・終値1720、値幅1179〜1779をYahoo!で確認し松井証券の場中値・単元100株とも照合。朝の300株1600円買い指値は未到達で失効。資金拘束480000円と現金3978250円を確認。8309終値1678円、日経平均58644.63（日経公式大引け）、TOPIX3764.88（Yahoo!15:30と株探15:47記事）を確認。11/13基準日経61142.35（株探）、TOPIX3941.57（Yahoo!時系列）を再確認。総資産4817250円、手数料・税未計上。",
   "benchmark_baseline": {
     "date": "2026-11-13",
     "nikkei_close": 61142.35,
