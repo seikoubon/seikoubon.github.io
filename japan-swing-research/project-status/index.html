@@ -42,7 +42,7 @@
     .kicker, .section-label { margin: 0 0 .8rem; color: var(--green); font-size: .9rem; font-weight: 700; }
     h1, h2, h3, p { margin-top: 0; }
     h1, h2 { font-family: "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif; }
-    h1 { margin-bottom: 1.25rem; font-size: clamp(2.3rem, 5.1vw, 4.1rem); line-height: 1.22; letter-spacing: -.035em; }
+    h1 { margin-bottom: 1.25rem; font-size: clamp(2.3rem, 4.1vw, 3.5rem); line-height: 1.22; letter-spacing: -.035em; }
     h2 { margin-bottom: .85rem; font-size: clamp(1.85rem, 3.5vw, 2.85rem); line-height: 1.32; letter-spacing: -.025em; }
     h3 { font-size: 1.13rem; line-height: 1.5; margin-bottom: .5rem; }
     p { margin-bottom: 1rem; }
@@ -117,6 +117,9 @@
       .method li + li { border-inline-start: 0; border-top: 1px solid var(--line); }
       .timeline li { grid-template-columns: 1fr; }
     }
+    @media (max-width: 420px) {
+      h1 { font-size: clamp(1.65rem, 8.2vw, 2.15rem); }
+    }
     @media print {
       .shell { width: 100%; }
       .site-header, .button, .switch, .skip { display: none; }
@@ -146,8 +149,8 @@
     <section class="hero" aria-labelledby="page-title">
       <div>
         <p class="kicker"><time datetime="2026-11-25">2026年11月25日</time>時点の研究報告</p>
-        <h1 id="page-title">日本株AI自動研究<br>プロジェクトの現在地</h1>
-        <p class="lead">AIが考えた日本株の売買ルールを過去のデータで試し、条件を変えずに別の時期でも通用するかを調べています。いまは一部の候補を実際の市場データで紙上検証しながら、費用を引いても効果が残るかを確かめています。</p>
+        <h1 id="page-title">日本株AI自動研究<br>プロジェクトの<wbr>現在地</h1>
+        <p class="lead">AIが考えた日本株の売買ルールを過去のデータで試し、条件を変えずに別の時期でも通用するかを調べています。いまは一部の候補について、最新の市場データで仮想資金の注文を記録する「紙上取引」も進めています。</p>
         <a class="button" href="#decision">今回の判断を読む</a>
       </div>
       <aside class="snapshot" aria-label="研究の規模と今回の判断">
@@ -176,7 +179,7 @@
       <div>
         <p class="section-label">11月24日の追加判断</p>
         <h2 id="decision-title">増配ルールとの組み合わせは見送り</h2>
-        <p>既存のスイングペア（A08＋SW-020）に、増配で予想配当利回りが3%に達した銘柄を10営業日保有するルール（IDR26）を組み合わせました。仮想の500万円を半分ずつ割り当て、IDR26用の半分を現金のままにした場合と比べました。</p>
+        <p>既存のスイングペア（A08＋SW-020）に、増配で予想配当利回りが3%未満から3%以上になった銘柄を10営業日保有するルール（IDR26）を組み合わせました。仮想の500万円を半分ずつ割り当て、IDR26用の半分を現金のままにした場合と比べました。</p>
         <p>2024〜2025年は組み合わせた方が利益を増やしました。2026年の追試では差がマイナスに転じ、費用を見込むと差はさらに開きました。この結果を受け、組み合わせの紙上取引への追加を見送りました。IDR26単独は別の枠で紙上検証を続けています。</p>
         <p class="section-intro">2026年は11月24日までに確認できた開示と価格を使った過去データの再現です。新規探索でも、費用と現金との比較を含めて両期間で改善した案はありませんでした。</p>
       </div>
