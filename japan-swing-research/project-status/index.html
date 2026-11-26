@@ -70,16 +70,8 @@
     .research { display: grid; grid-template-columns: 1fr 1.15fr; gap: clamp(1.4rem, 4vw, 3.2rem); align-items: start; }
     .research .section-intro { margin-bottom: 0; }
     .chart { min-width: 0; margin: 0; padding: clamp(1rem, 3vw, 1.65rem); border: 1px solid var(--line); border-radius: .65rem; background: var(--white); }
-    .chart legend { padding: 0 .4rem; font-weight: 700; }
-    .switch { display: flex; flex-wrap: wrap; gap: .42rem 1.1rem; font-size: .9rem; margin-bottom: 1rem; }
-    .switch label { display: inline-flex; align-items: center; gap: .4rem; cursor: pointer; }
-    .switch input { width: 1.1rem; height: 1.1rem; margin: 0; accent-color: var(--green); }
-    .switch input:focus-visible { outline: 2px solid var(--green); outline-offset: 4px; }
-    .chart-set { margin: 0; }
-    .chart-set.cost { display: none; }
-    .chart:has(#cost-30:checked) .chart-set.free { display: none; }
-    .chart:has(#cost-30:checked) .chart-set.cost { display: block; }
-    .chart-set dl { margin: 0; }
+    .chart figcaption { margin-bottom: .8rem; font-weight: 700; }
+    .chart dl { margin: 0; }
     .chart-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .2rem .5rem; margin-bottom: .8rem; }
     .chart-row dt { font-size: .9rem; font-weight: 700; }
     .chart-row dd { margin: 0; font-weight: 750; font-variant-numeric: tabular-nums; }
@@ -91,7 +83,8 @@
     .track .positive { left: 50%; background: #427758; }
     .track .negative { right: 50%; background: #a5503e; }
     .scale { display: flex; justify-content: space-between; color: var(--muted); font-size: .81rem; }
-    .chart-note { margin: .8rem 0 0; font-size: .875rem; color: var(--muted); }
+    .chart-note, .chart-reference { margin: .8rem 0 0; font-size: .875rem; color: var(--muted); }
+    .chart-reference { padding-top: .8rem; border-top: 1px solid var(--line); }
     .timeline { list-style: none; margin: 1.65rem 0 0; padding: 0; }
     .timeline li { display: grid; grid-template-columns: 9rem 1fr; gap: .3rem 1.4rem; border-top: 1px solid var(--line); padding: 1.1rem 0; }
     .timeline time { color: var(--green); font-weight: 700; font-variant-numeric: tabular-nums; }
@@ -122,13 +115,12 @@
     }
     @media print {
       .shell { width: 100%; }
-      .site-header, .button, .switch, .skip { display: none; }
+      .site-header, .button, .skip { display: none; }
       .hero, .research, .next { display: block; }
       .snapshot { margin-top: 1rem; color: var(--ink); background: var(--white); border: 1px solid var(--line); }
       .snapshot > p, .snapshot dt span, .snapshot dd, .snapshot .snapshot-note { color: var(--ink); }
-      .chart .chart-set { display: block !important; margin-bottom: .75rem; }
-      .chart-set::before { content: attr(data-print-label); display: block; font-weight: 700; }
       .chart, .method, .priority, .timeline li { break-inside: avoid; }
+      .track { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     }
   </style>
 </head>
@@ -172,6 +164,8 @@
         <li><h3>過去を再現する</h3><p>その時点で知ることができた情報で取引を再現し、市場全体の目安となるTOPIXや、条件の近い銘柄と比べます。</p></li>
         <li><h3>別の時期と市場で確かめる</h3><p>同じルールを別の時期でも試します。残った候補は紙上取引で、日々のデータから注文を組めるかを確認します。</p></li>
       </ol>
+      <h3>11月25日以降の検証方針</h3>
+      <p class="section-intro">バックテストの取引費用は往復0bpに固定します。取引費用は必要に応じてペーパートレード（紙上取引）の実測に基づいて評価します。検証期間は仮説と利用可能なデータに応じて設定します。</p>
       <div class="example"><p><strong>保有日数の例</strong>　月曜の取引開始時に買うと、寄り引けは同じ月曜の終了時に売ります。5営業日のスイングでは、休場がなければ金曜の終了時まで保有します。</p></div>
     </section>
 
@@ -180,30 +174,19 @@
         <p class="section-label">11月24日の追加判断</p>
         <h2 id="decision-title">増配ルールとの組み合わせは見送り</h2>
         <p>既存のスイングペア（A08＋SW-020）に、増配で予想配当利回りが3%未満から3%以上になった銘柄を10営業日保有するルール（IDR26）を組み合わせました。仮想の500万円を半分ずつ割り当て、IDR26用の半分を現金のままにした場合と比べました。</p>
-        <p>2024〜2025年は組み合わせた方が利益を増やしました。2026年の追試では差がマイナスに転じ、費用を見込むと差はさらに開きました。この結果を受け、組み合わせの紙上取引への追加を見送りました。IDR26単独は別の枠で紙上検証を続けています。</p>
-        <p class="section-intro">2026年は11月24日までに確認できた開示と価格を使った過去データの再現です。新規探索でも、費用と現金との比較を含めて両期間で改善した案はありませんでした。</p>
+        <p>2024〜2025年は組み合わせた方が利益を増やしました。2026年の追試では差がマイナスに転じ、11月24日の参考試算では往復費用を0.30%と仮定すると差はさらに開きました。この結果を受け、組み合わせの紙上取引への追加を見送りました。IDR26単独は別の枠で紙上検証を続けています。</p>
+        <p class="section-intro">2026年は11月24日までに確認できた開示と価格を使った過去データの再現です。11月24日の新規探索でも、当時の費用条件と現金対照を含めて両期間で改善した案はありませんでした。</p>
       </div>
-      <fieldset class="chart">
-        <legend>IDR26の資金を現金で置いた場合との差</legend>
-        <div class="switch">
-          <label><input type="radio" name="cost" id="cost-0" checked> 費用なし</label>
-          <label><input type="radio" name="cost" id="cost-30"> 往復費用0.30%</label>
-        </div>
-        <div class="chart-set free" data-print-label="費用なし">
-          <dl>
-            <div class="chart-row"><dt>2024〜2025年</dt><dd class="gain">+46.0万円</dd><dd class="track" aria-hidden="true"><span class="positive" style="--width: 46%"></span></dd></div>
-            <div class="chart-row"><dt>2026年（11月24日まで）</dt><dd class="loss">−11.6万円</dd><dd class="track" aria-hidden="true"><span class="negative" style="--width: 11.6%"></span></dd></div>
-          </dl>
-        </div>
-        <div class="chart-set cost" data-print-label="往復費用0.30%">
-          <dl>
-            <div class="chart-row"><dt>2024〜2025年</dt><dd class="gain">+41.2万円</dd><dd class="track" aria-hidden="true"><span class="positive" style="--width: 41.2%"></span></dd></div>
-            <div class="chart-row"><dt>2026年（11月24日まで）</dt><dd class="loss">−14.1万円</dd><dd class="track" aria-hidden="true"><span class="negative" style="--width: 14.1%"></span></dd></div>
-          </dl>
-        </div>
+      <figure class="chart">
+        <figcaption>IDR26の資金を現金で置いた場合との損益差（往復0bp）</figcaption>
+        <dl>
+          <div class="chart-row"><dt>2024〜2025年</dt><dd class="gain">+46.0万円</dd><dd class="track" aria-hidden="true"><span class="positive" style="--width: 46%"></span></dd></div>
+          <div class="chart-row"><dt>2026年（11月24日まで）</dt><dd class="loss">−11.6万円</dd><dd class="track" aria-hidden="true"><span class="negative" style="--width: 11.6%"></span></dd></div>
+        </dl>
         <div class="scale" aria-hidden="true"><span>−50万円</span><span>0</span><span>+50万円</span></div>
         <p class="chart-note">各期間の開始資金は500万円。プラスは組み合わせた方が利益を増やし、マイナスは現金で置いた方が利益を残したことを示します。</p>
-      </fieldset>
+        <p class="chart-reference"><strong>11月24日の参考試算（往復費用0.30%）</strong><br>2024〜2025年は+41.2万円、2026年（11月24日まで）は−14.1万円でした。</p>
+      </figure>
     </section>
 
     <section class="section" id="timeline" aria-labelledby="timeline-title">
@@ -220,7 +203,7 @@
       <h2 id="next-title">次に確かめること</h2>
       <div class="next">
         <article class="priority"><h3>注文が組めるか</h3><p>新しい取引日で、開示が締め切り前に届いたか、100株単位で注文できるか、当日の市場でどの程度の数量を取引できるかを確認します。</p></article>
-        <article class="priority"><h3>利益が一部の日に偏っていないか</h3><p>費用を引き、利益の大きい数日を外しても効果が残るかを調べます。市場全体の上昇や、特定の業種・値動きの大きい株への偏りも点検します。</p></article>
+        <article class="priority"><h3>利益が一部の日に偏っていないか</h3><p>利益の大きい数日を外しても効果が残るかを、往復0bpのバックテストで調べます。市場全体の上昇や、特定の業種・値動きの大きい株への偏りも点検します。</p></article>
         <article class="priority"><h3>財務データが揃うか</h3><p>売上総利益を総資産で割る新仮説は、使える初回の有価証券報告書が不足しているため保留中です。訂正前の原本と公表日時を揃えてから検証します。</p></article>
       </div>
     </section>
@@ -229,7 +212,7 @@
       <h2 id="terms-title">用語と資料</h2>
       <details><summary>バックテストと紙上取引</summary><p>バックテストは過去の相場に売買ルールを当てはめるシミュレーションです。紙上取引では、その日に得られた市場データを使い、仮想資金で注文・約定を記録します。どちらの金額も実資金での取引成績とは区別します。</p></details>
       <details><summary>TOPIXとの比較</summary><p>TOPIXは日本の株式市場の動きを見る指数です。この研究では、各取引と同じ金額・同じ保有期間をTOPIXに当てはめた損益を目安にし、銘柄を選んだ効果を見ます。今回の比較は配当を含まない価格ベースです。</p></details>
-      <details><summary>取引費用と最大ドローダウン</summary><p>往復費用は買いから売りまでにかかる費用の仮定です。最大ドローダウンは、口座残高が直前までの最高値から最も大きく下がった割合です。利益と一緒に、途中でどれだけ資産が減ったかを確認します。</p></details>
+      <details><summary>取引費用と最大ドローダウン</summary><p>往復費用は買いから売りまでにかかる取引費用の合計です。最大ドローダウンは、口座残高が直前までの最高値から最も大きく下がった割合です。利益と一緒に、途中でどれだけ資産が減ったかを確認します。</p></details>
       <ul class="references">
         <li><a href="../swing-validation-2026-11-20/">11月20日の詳細報告「寄り引け全案のスイング検証」</a></li>
         <li><a href="https://github.com/seikoubon/japan-swing-ai-research">研究コードと基礎検証の説明（GitHub）</a></li>
